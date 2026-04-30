@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* This maps your custom variables to Tailwind classes */
+  /* e.g., <div class="text-accent"> or <div class="bg-code"> */
+  --color-accent: var(--accent);
+  --color-code-bg: var(--code-bg);
+  --color-text-main: var(--text);
+  --color-text-heading: var(--text-h);
+  
+  --font-sans: var(--sans);
+  --font-mono: var(--mono);
+}
+
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  /* ... keep the rest of your variables here ... */
+}
+
+/* Keep your existing body and #root styles below */
+body {
+  margin: 0;
+  font-family: "Gill Sans", sans-serif;
+}
+
+#root {
+ 
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
