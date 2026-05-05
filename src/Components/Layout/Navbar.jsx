@@ -27,7 +27,7 @@ const Navbar = () => {
       name: 'Villas',
       subItems: [
         { name: 'All Nature', path: '/twovillas/#villas/all-nature' },
-        { name: 'The Blue Diamond', path: '/twovillas/#villas/blue-diamond' },
+        { name: 'Blue Diamond', path: '/twovillas/#villas/blue-diamond' },
       ],
     },
     {
@@ -38,22 +38,22 @@ const Navbar = () => {
       //   { name: 'Services3', path: '/twovillas/#Services3' },
       // ],
     },
-    { name: 'Contact', path: '/twovillas/#contact' },
     {
       name: 'Availability',
       subItems: [
         { name: 'All Nature', path: '/twovillas/#availability/all-nature' },
-        { name: 'The Blue Diamond', path: '/twovillas/#availability/blue-diamond' },
+        { name: 'Blue Diamond', path: '/twovillas/#availability/blue-diamond' },
       ],
     },
     {
       name: 'Reviews',
       subItems: [
         { name: 'All Nature', path: '/twovillas/#reviews/all-nature' },
-        { name: 'The Blue Diamond', path: '/twovillas/#reviews/blue-diamond' },
+        { name: 'Blue Diamond', path: '/twovillas/#reviews/blue-diamond' },
       ],
     },
     { name: 'Activities', path: '/twovillas/#activities' },
+    { name: 'Contact', path: '/twovillas/#contact' },
     { name: 'Book Now', path: '/twovillas/#book-now' }, // This will be rendered as a button
   ];
 
@@ -63,13 +63,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-2 md:top-5 left-1/2  -translate-x-1/2 w-[95%] z-50 font-serif transition-all rounded-[50px] duration-500 ease-in-out border-b ${scrolled
+      className={`fixed top-2 md:top-5 left-1/2  -translate-x-1/2 w-[95%] md:w-[85%] z-50 font-serif transition-all rounded-[50px] duration-500 ease-in-out border-b ${scrolled
         ? 'bg-[#F0F8FF]/85 backdrop-blur-xl border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.08)] py-1'
         : 'bg-[#F0F8FF]/50 backdrop-blur-md border-transparent py-1'
         }`}
     >
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-        <div className="flex justify-between items-center h-20 md:h-24 transition-all duration-500">
+        <div className="flex justify-between items-center h-15 md:h-20 transition-all duration-500">
 
           {/* 1. Logo Section */}
           <div className="flex-shrink-0">

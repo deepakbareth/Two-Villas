@@ -15,7 +15,7 @@ const PropertiesSection = () => {
     },
     {
       id: 1,
-      title: "The Blue Diamond Villa",
+      title: "Blue Diamond Villa",
       specs: { bedrooms: 4, bathrooms: 4, sleeps: 21, sqft: "3552.1" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Air conditioning'],
       image: p1
