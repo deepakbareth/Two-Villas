@@ -63,7 +63,7 @@ const Footer = () => {
                   Activities
                 </Link>
               </li>
-             
+
             </ul>
           </div>
 
@@ -105,7 +105,7 @@ const Footer = () => {
         {/* Bottom Copyright Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-light">
           <p>
-            &copy; {new Date().getFullYear()} Two Villas. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Premium Villas. All Rights Reserved.
           </p>
           <p className="tracking-wide">
             Powered By | <a href="https://premiumbusinesswebsites.com/" target='_blank' className='text-blue-500'>premiumbusinesswebsites</a>
