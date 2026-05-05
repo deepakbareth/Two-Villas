@@ -1,22 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Assuming you are using React Router
-import logo from '../../assets/home/websiteLogo.png';
+import logo from '../../assets/home/websiteLogo2.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111827] pt-20 pb-8 border-t border-gray-800">
+    <footer className="bg-[#111827] pt-10 md:pt-15 pb-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Top Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
 
           {/* 1. Logo Column */}
-          <div className="flex flex-col items-start justify-center">
+          <div className="flex flex-col items-center justify-center">
             <Link to='/twovillas/'>
               <img
                 src={logo}
                 alt="Two Villas Logo"
-                className="h-32 w-auto object-contain drop-shadow-lg rounded-xl"
+                className="h-32  object-contain drop-shadow-lg rounded-xl bg-[linear-gradient(0.25turn,#f8b46c,#ebf8e1,#71cef6)]"
               // Note: 'brightness-0 invert' makes a black logo white for the dark background. 
               // Remove those 2 classes if your logo is already white/transparent!
               />

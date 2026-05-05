@@ -8,7 +8,7 @@ const PropertiesSection = () => {
   const propertiesData = [
     {
       id: 2,
-      title: 'All Nature',
+      title: 'All Nature Villa',
       specs: { bedrooms: 5, bathrooms: 5, sleeps: 19, sqft: "2712.5" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Free WiFi'],
       image: p2

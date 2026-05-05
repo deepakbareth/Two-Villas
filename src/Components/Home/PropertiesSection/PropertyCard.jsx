@@ -26,7 +26,7 @@ const PropertyCard = ({ property, index }) => {
         </span>
 
         {/* 2. Main Heading */}
-        <h3 className="text-3xl md:text-4xl font-serif text-[#17818A] mb-6 tracking-tight">
+        <h3 className="text-3xl md:text-4xl text-center font-serif text-[#17818A] mb-6 tracking-tight">
           {property.title}
         </h3>
 

@@ -27,7 +27,7 @@ const AboutSection = () => {
 
           {/* LEFT  BOX: All Nature */}
           <div className="flex-1 w-full bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 flex flex-col h-full">
-            <h3 className="text-2xl font-serif text-[#0a2342] mb-8 leading-snug">
+            <h3 className="text-2xl font-serif text-[#0a2342] mb-8 text-center leading-snug">
               All Nature Villa
             </h3>
 
@@ -48,7 +48,7 @@ const AboutSection = () => {
 
           {/*  RIGHT BOX: Blue Diamond Villa */}
           <div className="flex-1 w-full bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 flex flex-col h-full">
-            <h3 className="text-2xl font-serif text-[#0a2342] mb-8 leading-snug">
+            <h3 className="text-2xl font-serif text-[#0a2342] mb-8 text-center leading-snug">
               Blue Diamond Villa
             </h3>
 
