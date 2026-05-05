@@ -6,56 +6,66 @@ const Footer = () => {
   return (
     <footer className="bg-[#111827] pt-20 pb-8 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Top Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
-          
+
           {/* 1. Logo Column */}
           <div className="flex flex-col items-start justify-center">
-           <Link to='/twovillas/'>
+            <Link to='/twovillas/'>
               <img
                 src={logo}
                 alt="Two Villas Logo"
-                className="h-32 w-auto object-contain drop-shadow-lg rounded-xl" 
-                // Note: 'brightness-0 invert' makes a black logo white for the dark background. 
-                // Remove those 2 classes if your logo is already white/transparent!
+                className="h-32 w-auto object-contain drop-shadow-lg rounded-xl"
+              // Note: 'brightness-0 invert' makes a black logo white for the dark background. 
+              // Remove those 2 classes if your logo is already white/transparent!
               />
-        </Link>
+            </Link>
           </div>
 
           {/* 2. Quick Links Column */}
-          <div>
+          <div className="max-w-md"> {/* Added a max-width to keep the grid tight */}
             <h3 className="text-2xl font-serif text-[#17818A] relative pb-4 mb-6 inline-block">
               Quick Links
               {/* Yellow Accent Line */}
               <span className="absolute bottom-0 left-0 w-12 h-[2px] bg-yellow-400"></span>
             </h3>
-            <ul className="space-y-4">
+
+            {/* Changed to a 2-column grid on small screens and up */}
+            <ul className="grid grid-cols-2 gap-x-8 gap-y-4">
               <li>
                 <Link to="/twovillas/" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
-                 Home
-
-
-                </Link>
-              </li>
-              <li>
-                <Link to="/twovillas/#about-us" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
-                 About Us
+                  Home
                 </Link>
               </li>
               <li>
                 <Link to="/twovillas/#villas" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
-                 Villas
+                  Villas
                 </Link>
               </li>
               <li>
-                <Link to="/twovillas/#gallery" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
-                  Gallery
+                <Link to="/twovillas/#services" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/twovillas/#availability" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
+                  Availability
                 </Link>
               </li>
               <li>
                 <Link to="/twovillas/#reviews" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
                   Reviews
+                </Link>
+              </li>
+              <li>
+                <Link to="/twovillas/#activities" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
+                  Activities
+                </Link>
+              </li>
+              <li className="col-span-1">
+                <Link to="/twovillas/#book" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
+                  Book
                 </Link>
               </li>
             </ul>
@@ -89,8 +99,8 @@ const Footer = () => {
             <p className="text-gray-300 font-light leading-relaxed mb-8">
               Save on service fees by booking directly through our secure platform.
             </p>
-            <button className="bg-yellow-500 text-black px-8 py-3.5 font-bold text-xs tracking-widest uppercase rounded hover:bg-yellow-500 hover:shadow-lg transition-all duration-300">
-              Reserve Now
+            <button className="bg-yellow-500 font-serif text-black px-8 py-3.5 font-bold text-xs tracking-widest uppercase rounded hover:bg-yellow-500 hover:shadow-lg transition-all duration-300">
+              Book  Now
             </button>
           </div>
 
