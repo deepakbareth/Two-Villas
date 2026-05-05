@@ -26,31 +26,31 @@ const Navbar = () => {
     {
       name: 'Villas',
       subItems: [
-        { name: 'The Blue Diamond', path: '/twovillas/#villas/blue-diamond' },
         { name: 'All Nature', path: '/twovillas/#villas/all-nature' },
+        { name: 'The Blue Diamond', path: '/twovillas/#villas/blue-diamond' },
       ],
     },
     {
       name: 'Services',
-      subItems: [
-        { name: 'Services1', path: '/twovillas/#Services1' },
-        { name: 'Services2', path: '/twovillas/#Services2' },
-        { name: 'Services3', path: '/twovillas/#Services3' },
-      ],
+      // subItems: [
+      //   { name: 'Services1', path: '/twovillas/#Services1' },
+      //   { name: 'Services2', path: '/twovillas/#Services2' },
+      //   { name: 'Services3', path: '/twovillas/#Services3' },
+      // ],
     },
     { name: 'Contact', path: '/twovillas/#contact' },
     {
       name: 'Availability',
       subItems: [
-        { name: 'The Blue Diamond', path: '/twovillas/#availability/blue-diamond' },
         { name: 'All Nature', path: '/twovillas/#availability/all-nature' },
+        { name: 'The Blue Diamond', path: '/twovillas/#availability/blue-diamond' },
       ],
     },
     {
       name: 'Reviews',
       subItems: [
-        { name: 'The Blue Diamond', path: '/twovillas/#reviews/blue-diamond' },
         { name: 'All Nature', path: '/twovillas/#reviews/all-nature' },
+        { name: 'The Blue Diamond', path: '/twovillas/#reviews/blue-diamond' },
       ],
     },
     { name: 'Activities', path: '/twovillas/#activities' },
@@ -170,7 +170,7 @@ const Navbar = () => {
                   </button>
                   <div className={`pl-6 space-y-1 transition-all ${mobileDropdown === item.name ? 'max-h-96 pb-4' : 'max-h-0 overflow-hidden'}`}>
                     {item.subItems.map(sub => (
-                      <NavLink key={sub.name} to={sub.path} className="block py-3 text-lg text-gray-500">{sub.name}</NavLink>
+                      <NavLink key={sub.name} to={sub.path} className="block py-3 text-xl text-gray-900">{sub.name}</NavLink>
                     ))}
                   </div>
                 </>

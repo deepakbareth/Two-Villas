@@ -7,19 +7,19 @@ const PropertiesSection = () => {
   // Data updated to match Screenshots 1, 2, 3, and 4
   const propertiesData = [
     {
+      id: 2,
+      title: 'All Nature',
+      specs: { bedrooms: 5, bathrooms: 5, sleeps: 19, sqft: "2712.5" },
+      amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Free WiFi'],
+      image: p2
+    },
+    {
       id: 1,
       title: "The Blue Diamond Villa",
       specs: { bedrooms: 4, bathrooms: 4, sleeps: 21, sqft: "3552.1" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Air conditioning'],
       image: p1
     },
-    {
-      id: 2,
-      title: 'All Nature',
-      specs: { bedrooms: 5, bathrooms: 5, sleeps: 19, sqft: "2712.5" },
-      amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Free WiFi'],
-      image: p2
-    }
   ];
 
   return (

@@ -23,7 +23,30 @@ const AboutSection = () => {
         {/* Side-by-Side Container - Removed 'items-start' so they stretch to equal height */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
 
-          {/* LEFT BOX: The Blue Diamond Villa */}
+        
+
+          {/* LEFT  BOX: All Nature */}
+          <div className="flex-1 w-full bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 flex flex-col h-full">
+            <h3 className="text-2xl font-serif text-[#0a2342] mb-8 leading-snug">
+              All Nature Villa
+            </h3>
+
+            {/* flex-grow ensures this takes up all available space, pushing the button to the bottom */}
+            <div className="space-y-4 text-gray-600 leading-relaxed font-light text-[17px] flex-grow">
+              <p>
+                All Nature is an IBIZA style villa created to make you feel surrounded by nature and freshness. An oasis of enjoyment and relaxation. Very spacious, modern and fully equipped.
+              </p>
+              <p>
+                2.400m2 garden. Outdoor Lounge, Double Chill-Out bed. 2 Jacuzzi (1 in the pool and a hot tub on the terrace), Bar and BBQ. HIFI, WIFI, Smart TV.
+              </p>
+
+
+            </div>
+
+
+          </div>
+
+            {/*  RIGHT BOX: The Blue Diamond Villa */}
           <div className="flex-1 w-full bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 flex flex-col h-full">
             <h3 className="text-2xl font-serif text-[#0a2342] mb-8 leading-snug">
               The Blue Diamond Villa
@@ -48,27 +71,6 @@ const AboutSection = () => {
                   </p>
                 </div>
               </div>
-            </div>
-
-
-          </div>
-
-          {/* RIGHT BOX: All Nature */}
-          <div className="flex-1 w-full bg-white/80 backdrop-blur-xl p-8 md:p-12 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-white hover:shadow-[0_20px_50px_rgb(0,0,0,0.08)] transition-all duration-500 flex flex-col h-full">
-            <h3 className="text-2xl font-serif text-[#0a2342] mb-8 leading-snug">
-              All Nature Villa
-            </h3>
-
-            {/* flex-grow ensures this takes up all available space, pushing the button to the bottom */}
-            <div className="space-y-4 text-gray-600 leading-relaxed font-light text-[17px] flex-grow">
-              <p>
-                All Nature is an IBIZA style villa created to make you feel surrounded by nature and freshness. An oasis of enjoyment and relaxation. Very spacious, modern and fully equipped.
-              </p>
-              <p>
-                2.400m2 garden. Outdoor Lounge, Double Chill-Out bed. 2 Jacuzzi (1 in the pool and a hot tub on the terrace), Bar and BBQ. HIFI, WIFI, Smart TV.
-              </p>
-
-
             </div>
 
 

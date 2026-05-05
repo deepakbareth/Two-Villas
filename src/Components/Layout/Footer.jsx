@@ -63,11 +63,7 @@ const Footer = () => {
                   Activities
                 </Link>
               </li>
-              <li className="col-span-1">
-                <Link to="/twovillas/#book" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
-                  Book
-                </Link>
-              </li>
+             
             </ul>
           </div>
 
@@ -79,7 +75,7 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4 text-gray-300 font-light leading-relaxed">
               <li>
-                <span className="font-semibold text-white">Phone:</span> <a href="tel:34622818061" className="hover:text-yellow-400 transition-colors">+ 34 622 818 061</a>
+                <span className="font-semibold text-white">Phone:</span> <a href="tel:34622818061" className="hover:text-yellow-400 transition-colors">+34 622 818 061</a>
               </li>
               <li>
                 <span className="font-semibold text-white">Email:</span> albertosanchez591@gmail.com
