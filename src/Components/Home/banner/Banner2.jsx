@@ -33,7 +33,7 @@ const BeautifulSlider = ({ images, title, delay = 0, links }) => {
   }, [images.length, delay]);
 
   return (
-    <div className="relative w-full aspect-square sm:aspect-[4/3] rounded-xl overflow-hidden shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] group">
+    <div className="relative w-full  aspect-square sm:aspect-[4/3.1] rounded-xl overflow-hidden shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] group">
 
       {/* --- Modern Frosted Glass Anchor Buttons --- */}
       <div className="absolute top-2 font-serif  left-1/2 -translate-x-1/2 z-30 flex items-center justify-center    px-4 py-2.5  w-auto whitespace-nowrap">
@@ -65,7 +65,7 @@ const BeautifulSlider = ({ images, title, delay = 0, links }) => {
   hover:text-white/70 transition-colors px-2 sm:px-4 
   [text-shadow:0_2px_6px_rgba(0,0,0,0.6)]"
         >
-          Calender
+          Calendar
         </Link>
       </div>
 
@@ -136,7 +136,7 @@ const Banner2 = () => {
 
   return (
     <section className="py-25 lg:py-27 relative">
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-2 relative z-10">
+      <div className="max-w-8xl  px-4 sm:px-6 lg:px-2 relative z-10">
 
         {/* Side-by-Side Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-3">
