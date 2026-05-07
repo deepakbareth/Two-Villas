@@ -29,21 +29,21 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
         isPlayingRef.current = isPlaying;
     }, [isPlaying]);
 
-    useEffect(() => {
-        // We use a timeout to create the offset (stagger)
-        const startDelay = setTimeout(() => {
-            const slideInterval = setInterval(() => {
-                // Check the ref instead of the state so we don't have to reset the interval!
-                if (!isPlayingRef.current) {
-                    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-                }
-            }, 5000); // 5 seconds per slide
+    // useEffect(() => {                   // img chnaging logic
+    //     // We use a timeout to create the offset (stagger)
+    //     const startDelay = setTimeout(() => {
+    //         const slideInterval = setInterval(() => {
+    //             // Check the ref instead of the state so we don't have to reset the interval!
+    //             if (!isPlayingRef.current) {
+    //                 setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+    //             }
+    //         }, 5000); // 5 seconds per slide
 
-            return () => clearInterval(slideInterval);
-        }, delay);
+    //         return () => clearInterval(slideInterval);
+    //     }, delay);
 
-        return () => clearTimeout(startDelay);
-    }, [images.length, delay]); // <-- FIXED: Removed isPlaying from dependencies!
+    //     return () => clearTimeout(startDelay);
+    // }, [images.length, delay]); // <-- FIXED: Removed isPlaying from dependencies!
 
     // Video Toggle Logic
     const toggleVideo = () => {
@@ -130,7 +130,7 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
             </div>
 
             {/* Floating Title Overlay */}
-            <div className="absolute bottom-13 left-0 right-0 flex justify-center z-20 pointer-events-none">
+            <div className="absolute bottom-3 left-0 right-0 flex justify-center z-20 pointer-events-none">
                 <div className="px-8 py-3 rounded-full  transform transition-transform duration-700">
                     <h3 style={{ fontFamily: "'Futura PT', sans-serif" }} className="text-white md:text-[38px] text-[20px] font-[Sans-Serif] uppercase tracking-widest  text-center  [text-shadow:6px_5px_4px_rgba(0,0,0,5)]">
                         {title}
@@ -139,17 +139,22 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
             </div>
 
             {/* --- Play/Pause Button (Inside Bottom Left Corner) --- */}
-            <div className="absolute md:bottom-6 bottom-3 left-1/2 -translate-x-1/2 z-30">
+            <div className="absolute md:bottom-20 bottom-15 left-1/2 -translate-x-1/2 z-30">
                 <button
                     onClick={toggleVideo}
-                    className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md  flex items-center justify-center text-white hover:bg-white/40 transition-colors shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer"
+                    // Removed fixed w-10 h-10. Added padding (px-4 py-2) and gap-2
+                    className="px-4 py-2 md:px-5 md:py-2.5 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center gap-2 text-white hover:bg-white/40 transition-colors shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer"
                 >
                     {isPlaying ? (
-                        /* Pause Icon */
-                        <Pause fill="currentColor" stroke="none" className="md:w-4 md:h-4 w-3 h-3" />
+                        <>
+                            <span className="text-sm md:text-base font-medium tracking-wide">Pause</span>
+                            <Pause fill="currentColor" stroke="none" className="md:w-4 md:h-4 w-3 h-3" />
+                        </>
                     ) : (
-                        /* Play Icon */
-                        <Play fill="currentColor" stroke="none" className="md:w-4 md:h-4 w-3 h-3" />
+                        <>
+                            <span className="text-sm md:text-base font-medium tracking-wide">Play</span>
+                            <Play fill="currentColor" stroke="none" className="md:w-4 md:h-4 w-3 h-3" />
+                        </>
                     )}
                 </button>
             </div>
