@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Assuming you are using React Router
-import logo from '../../assets/home/websiteLogo2.png';
+import logo from '../../assets/home/websiteLogo4.png';
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Two Villas Logo"
-                className="h-32  object-contain drop-shadow-lg rounded-xl bg-[linear-gradient(0.25turn,#f8b46c,#ebf8e1,#71cef6)]"
+                className="h-32 p-3  object-contain drop-shadow-lg rounded-xl bg-[linear-gradient(0.25turn,#f8b46c,#ebf8e1,#71cef6)]"
               // Note: 'brightness-0 invert' makes a black logo white for the dark background. 
               // Remove those 2 classes if your logo is already white/transparent!
               />
@@ -95,7 +95,9 @@ const Footer = () => {
             <p className="text-gray-300 font-light leading-relaxed mb-8">
               Save on service fees by booking directly through our secure platform.
             </p>
-            <button className="bg-yellow-500 font-serif text-black px-8 py-3.5 font-bold text-xs tracking-widest uppercase rounded hover:bg-yellow-500 hover:shadow-lg transition-all duration-300">
+            <button
+              className="bg-yellow-500 font-serif text-black px-8 py-3.5  text-xl tracking-widest  rounded-full hover:bg-yellow-500 hover:shadow-lg transition-all duration-300"
+            >
               Book  Now
             </button>
           </div>

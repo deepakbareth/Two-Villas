@@ -57,8 +57,7 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
     };
 
     return (
-        <div className="relative w-full  aspect-square sm:aspect-[4/3.1] rounded-xl overflow-hidden shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] group bg-black">
-
+        <div className="relative w-full aspect-square sm:aspect-[4/3.1] rounded-xl overflow-hidden shadow-[0_10px_40px_-10px_rgba(0,0,0,0.15)] group bg-transparent isolate transform-gpu">
             {/* --- Modern Frosted Glass Anchor Buttons --- */}
             <div className="absolute top-2 font-serif  left-1/2 -translate-x-1/2 z-30 flex items-center justify-center    px-4 py-2.5  w-auto whitespace-nowrap">
                 <Link
@@ -143,17 +142,18 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
                 <button
                     onClick={toggleVideo}
                     // Removed fixed w-10 h-10. Added padding (px-4 py-2) and gap-2
-                    className="px-4 py-2 md:px-5 md:py-2.5 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center gap-2 text-white hover:bg-white/40 transition-colors shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer"
+                    className="px-4 py-2 md:px-5 md:py-2.5  flex items-center justify-center gap-2 text-white transition-colors  cursor-pointer"
                 >
                     {isPlaying ? (
                         <>
-                            <span className="text-sm md:text-base font-medium tracking-wide">Pause</span>
-                            <Pause fill="currentColor" stroke="none" className="md:w-4 md:h-4 w-3 h-3" />
+                            <span
+                                className="text-sm md:text-xl font-medium tracking-wide  hover:text-white/80   [text-shadow:6px_5px_4px_rgba(0,0,0,5)]">Pause</span>
+                            <Pause fill="currentColor" stroke="none" className="md:w-6 md:h-6 w-5 h-5" />
                         </>
                     ) : (
                         <>
-                            <span className="text-sm md:text-base font-medium tracking-wide">Play</span>
-                            <Play fill="currentColor" stroke="none" className="md:w-4 md:h-4 w-3 h-3" />
+                            <span className="text-sm md:text-xl font-medium tracking-wide  hover:text-white/80   [text-shadow:0px_5px_4px_rgba(0,0,0,5)]">Play</span>
+                            <Play fill="currentColor" stroke="none" className="md:w-6 md:h-6 w-5 h-5" />
                         </>
                     )}
                 </button>
