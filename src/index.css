@@ -7,9 +7,16 @@
   --color-code-bg: var(--code-bg);
   --color-text-main: var(--text);
   --color-text-heading: var(--text-h);
-  
+
   --font-sans: var(--sans);
   --font-mono: var(--mono);
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url('./assets/fonts/Aptos-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
@@ -29,7 +36,7 @@ body {
 }
 
 #root {
- 
+
   margin: 0 auto;
   min-height: 100svh;
   display: flex;

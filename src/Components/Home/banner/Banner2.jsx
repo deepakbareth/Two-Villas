@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import bannerVideo from '../../../assets/videos/hotelVid.mp4';
 
 // Import images for All Nature Villa
 import b1_1 from '../../../assets/home/b7.png';
@@ -39,35 +40,33 @@ const BeautifulSlider = ({ images, title, delay = 0, links }) => {
       <div className="absolute top-2 font-serif  left-1/2 -translate-x-1/2 z-30 flex items-center justify-center    px-4 py-2.5  w-auto whitespace-nowrap">
         <Link
           to={links.accommodation}
-          className="text-white text-[11px] md:text-[20px] font-bold md:font-medium tracking-widest uppercase 
-  hover:text-white/70 transition-colors px-2 sm:px-4 
-  [text-shadow:0_2px_6px_rgba(0,0,0,5)]"
+          className="text-[#00ffff] text-[11px] md:text-[20px] font-bold md:font-medium tracking-widest uppercase hover:text-white transition-colors px-2 sm:px-4 
+          [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]"
         >
           Accommodation
         </Link>
 
-        <span className="w-[1px] h-4 bg-white/80"></span> {/* Vertical Divider */}
+        {/* Vertical Divider with a subtle drop shadow so it doesn't vanish */}
+        <span className="w-[1px] h-4 bg-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"></span>
 
         <Link
           to={links.gallery}
-          className="text-white text-[11px] md:text-[20px] font-bold md:font-medium  tracking-widest uppercase 
-  hover:text-white/70 transition-colors px-2 sm:px-4 
-  [text-shadow:0_2px_6px_rgba(0,0,0,0.6)]"
+          className="text-[#00ffff] text-[11px] md:text-[20px] font-bold md:font-medium tracking-widest uppercase hover:text-white transition-colors px-2 sm:px-4 
+          [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]"
         >
           Gallery
         </Link>
 
-        <span className="w-[1px] h-4 bg-white/80"></span> {/* Vertical Divider */}
+        {/* Vertical Divider */}
+        <span className="w-[1px] h-4 bg-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"></span>
 
         <Link
           to={links.calendar}
-          className="text-white text-[11px] md:text-[20px] font-bold md:font-medium tracking-widest uppercase 
-  hover:text-white/70 transition-colors px-2 sm:px-4 
-  [text-shadow:0_2px_6px_rgba(0,0,0,0.6)]"
+          className="text-[#00ffff] text-[11px] md:text-[20px] font-bold md:font-medium tracking-widest uppercase hover:text-white transition-colors px-2 sm:px-4 
+          [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]"
         >
           Calendar
-        </Link>
-      </div>
+        </Link></div>
 
       {/* Cinematic Track */}
       <div className="relative w-full h-full">
@@ -96,7 +95,7 @@ const BeautifulSlider = ({ images, title, delay = 0, links }) => {
       {/* Floating Title Overlay */}
       <div className="absolute bottom-8 left-0 right-0 flex justify-center z-20 pointer-events-none">
         <div className="px-8 py-3 rounded-full  transform transition-transform duration-700">
-          <h3 className="text-white md:text-[38px] text-[20px] font-serif tracking-widest uppercase text-center  [text-shadow:0_5px_6px_rgba(0,0,0,5)]">
+          <h3 style={{ fontFamily: "'Futura PT', sans-serif" }} className="text-white md:text-[38px] text-[20px] font-[Sans-Serif] uppercase tracking-widest  text-center  [text-shadow:0_5px_6px_rgba(0,0,0,5)]">
             {title}
           </h3>
         </div>

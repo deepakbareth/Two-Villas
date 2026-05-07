@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import logo from '../../assets/home/websiteLogo2.png';
+import logo from '../../assets/home/websiteLogo4.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
     {
       name: 'Villas',
       subItems: [
-        { name: 'All Nature Villa', path: '/twovillas/#villas/all-nature' },
+        { name: 'All Nature Villa', path: '/twovillas/villas/all-nature' },
         { name: 'Blue Diamond Villa', path: '/twovillas/#villas/blue-diamond' },
       ],
     },
@@ -63,27 +63,27 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-5 md:top-7 left-1/2  -translate-x-1/2 w-[95%] md:w-[85%] z-50 font-serif transition-all rounded-[50px] duration-500 ease-in-out border-b ${scrolled
+      className={`fixed top-5 md:top-10 left-1/2  -translate-x-1/2 w-[95%] md:w-[98%] z-50 font-serif transition-all rounded-[50px] duration-500 ease-in-out border-b ${scrolled
         ? 'bg-[#F0F8FF]/85 backdrop-blur-xl border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.08)] py-1'
         : 'bg-[#F0F8FF]/50 backdrop-blur-md border-transparent py-1'
         }`}
     >
-      <div className="max-w-[1400px] mx-auto px-6 lg:px-2">
-        <div className="flex justify-between items-center h-15 md:h-15 transition-all duration-500">
+      <div className="max-w-[1600px] mx-auto px-6 py-0  lg:px-1">
+        <div className="flex justify-between items-center h-15 md:h-13 transition-all duration-500">
 
           {/* 1. Logo Section */}
-          <div className="relative md:top-[-18px] top-[-10px] left-[-20px] md:left-[-10px] flex-shrink-0">
+          <div className="relative md:top-[-25px] top-[-10px] left-[-20px] md:left-[-5px] flex-shrink-0">
             <NavLink to="/twovillas/" className="flex items-center group">
               <img
                 src={logo}
                 alt="Two Villas Logo"
-                className="h-15 md:h-22 w-auto  rounded-2xl object-contain "
+                className="h-22 md:h-23 w-auto  rounded-2xl object-contain "
               />
             </NavLink>
           </div>
 
           {/* 2. Desktop Navigation */}
-          <div className="hidden xl:flex items-center space-x-6">
+          <div className="hidden xl:flex items-center p-0 space-x-6">
             {navItems.map((item) => {
               // Special Rendering for "Book Now" Button
               if (item.name === 'Book Now') {
