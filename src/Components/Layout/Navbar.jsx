@@ -68,7 +68,7 @@ const Navbar = () => {
         : 'bg-[#F0F8FF]/50 backdrop-blur-md border-transparent py-1'
         }`}
     >
-      <div className="max-w-[1600px] mx-auto px-6 py-0  lg:px-1">
+      <div className="max-w-[1600px] mx-auto px-6 py-0  lg:px-0">
         <div className="flex justify-between items-center h-15 md:h-13  transition-all duration-500">
 
           <div className="flex items-end flex-shrink-0 relative md:top-[-22px] top-[-12px] ml-[-15px] md:ml-[-8px]  ">
@@ -99,7 +99,7 @@ const Navbar = () => {
                   <NavLink
                     key={item.name}
                     to={item.path}
-                    className="ml-4 bg-yellow-400 text-black px-8 py-3 rounded-full  text-[18px] shadow-lg hover:bg-yellow-500  transition-all duration-300 transform hover:-translate-y-0.5"
+                    className="ml-4 bg-yellow-400 text-black px-8 py-[16.9px] rounded-full text-[18px] shadow-lg hover:bg-yellow-500  transition-all duration-300 transform "
                   >
                     {item.name}
                   </NavLink>
