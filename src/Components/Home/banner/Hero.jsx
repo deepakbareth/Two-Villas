@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import bannerVideo from '../../../assets/videos/hotelVid2.mp4';
 import bannerVideo2 from '../../../assets/videos/hotelVid.mp4';
+import verticleVid from '../../../assets/videos/verticleVid.mp4';
 import { Play, Pause } from 'lucide-react';
 
 // Import images for All Nature Villa
@@ -95,7 +96,7 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
                 <video
                     ref={videoRef}
                     src={videoSrc}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     loop
                     muted
                     playsInline
@@ -184,7 +185,7 @@ const Hero = () => {
             id: 2,
             title: "Blue Diamond Villa",
             images: [b2_1, b2_2, b2_3],
-            video: bannerVideo, // Passed video here
+            video: verticleVid, // Passed video here
             delay: 2500, // Starts halfway through the first slider's cycle (2.5s)
             links: {
                 accommodation: "#villas/blue-diamond",

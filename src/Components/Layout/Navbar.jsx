@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import logo from '../../assets/home/websiteLogo4.png';
+import logo from '../../assets/home/websiteLogo5.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,16 +69,24 @@ const Navbar = () => {
         }`}
     >
       <div className="max-w-[1600px] mx-auto px-6 py-0  lg:px-1">
-        <div className="flex justify-between items-center h-15 md:h-13 transition-all duration-500">
+        <div className="flex justify-between items-center h-15 md:h-13  transition-all duration-500">
 
-          {/* 1. Logo Section */}
-          <div className="relative md:top-[-25px] top-[-10px] left-[-20px] md:left-[-5px] flex-shrink-0">
-            <NavLink to="/twovillas/" className="flex items-center group">
+          <div className="flex items-end flex-shrink-0 relative md:top-[-22px] top-[-12px] ml-[-15px] md:ml-[-8px]  ">
+            <NavLink to="/twovillas/" className="flex items-end group">
+              {/* Tree Image */}
               <img
                 src={logo}
                 alt="Two Villas Logo"
-                className="h-22 md:h-23 w-auto  rounded-2xl object-contain "
+                className="h-20 md:h-25 w-auto object-contain relative z-10"
               />
+
+              {/* Text: Removed absolute positioning, aligned to the right of the tree */}
+              <span
+                style={{ fontFamily: " 'Copperplate Gothic Bold';" }}
+                className="text-[#1a2b3c] md:text-[27px] text-[18px] font-bold uppercase tracking-widest  -ml-7 md:-ml-8 md:mb-[-12px] mb-[-5px] "
+              >
+                PREMIUM VILLAS
+              </span>
             </NavLink>
           </div>
 
@@ -91,7 +99,7 @@ const Navbar = () => {
                   <NavLink
                     key={item.name}
                     to={item.path}
-                    className="ml-4 bg-yellow-400 text-black px-8 py-3 rounded-full  text-[20px] shadow-lg hover:bg-yellow-500  transition-all duration-300 transform hover:-translate-y-0.5"
+                    className="ml-4 bg-yellow-400 text-black px-8 py-3 rounded-full  text-[18px] shadow-lg hover:bg-yellow-500  transition-all duration-300 transform hover:-translate-y-0.5"
                   >
                     {item.name}
                   </NavLink>
@@ -101,7 +109,7 @@ const Navbar = () => {
               return (
                 <div key={item.name} className="relative group">
                   {item.subItems ? (
-                    <button className="flex items-center gap-1.5 text-[20px]  text-[#0a2342] hover:text-[#17818A] transition-colors py-4">
+                    <button className="flex items-center gap-1.5 text-[18px]  text-[#0a2342] hover:text-[#17818A] transition-colors py-4">
                       {item.name}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform duration-300 group-hover:-rotate-180 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -110,7 +118,7 @@ const Navbar = () => {
                   ) : (
                     <NavLink
                       to={item.path}
-                      className="text-[20px]  text-[#0a2342] hover:text-[#17818A] transition-colors py-4"
+                      className="text-[18px]  text-[#0a2342] hover:text-[#17818A] transition-colors py-4"
                     >
                       {item.name}
                     </NavLink>
@@ -124,7 +132,7 @@ const Navbar = () => {
                             key={subItem.name}
                             to={subItem.path}
                             className={({ isActive }) =>
-                              `block px-6 py-3 text-[20px] transition-all text-gray-600 hover:text-[#17818A]`
+                              `block px-6 py-3 text-[18px] transition-all text-gray-600 hover:text-[#17818A]`
                             }
                           >
                             {subItem.name}
@@ -177,7 +185,7 @@ const Navbar = () => {
               ) : (
                 <NavLink
                   to={item.path}
-                  className={`block py-4 px-4 text-xl font-semibold ${item.name === 'Book Now'
+                  className={`block py-4 px-4 text-[18px] font-semibold ${item.name === 'Book Now'
                     ? 'bg-[#17818A] text-white text-center rounded-2xl mt-4 shadow-md'
                     : 'text-[#0a2342]'
                     }`}

@@ -100,6 +100,10 @@ const Footer = () => {
             >
               Book  Now
             </button>
+
+            {/* <h3 style={{ fontFamily: "'Futura PT', sans-serif" }} className="text-black md:text-[28px] text-[20px] bg-white font-[Sans-Serif] uppercase tracking-widest  text-center  ">
+              PREMIUM VILLAS
+            </h3> */}
           </div>
 
         </div>

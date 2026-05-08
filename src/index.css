@@ -19,6 +19,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Amasis MT Std Black';
+  src: url('./assets/fonts/Amasis\ MT\ Std\ Black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Copperplate Gothic Bold';
+  src: url('./assets/fonts/copperplategothic_bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
