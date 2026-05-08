@@ -77,13 +77,13 @@ const Navbar = () => {
               <img
                 src={logo}
                 alt="Two Villas Logo"
-                className="h-20 md:h-25 w-auto object-contain relative z-10"
+                className="h-20 md:h-25 w-auto object-contain relative z-10 top-[1px]"
               />
 
               {/* Text: Removed absolute positioning, aligned to the right of the tree */}
               <span
                 style={{ fontFamily: " 'Copperplate Gothic Bold';" }}
-                className="text-[#1a2b3c] md:text-[27px] text-[18px] font-bold uppercase tracking-widest  -ml-7 md:-ml-8 md:mb-[-12px] mb-[-5px] "
+                className="text-[#1a2b3c] md:text-[27px] text-[18px] font-bold uppercase tracking-widest  -ml-7 md:-ml-8 md:mb-[-11.5px] mb-[-9px] "
               >
                 PREMIUM VILLAS
               </span>
@@ -186,8 +186,8 @@ const Navbar = () => {
                 <NavLink
                   to={item.path}
                   className={`block py-4 px-4 text-[18px] font-semibold ${item.name === 'Book Now'
-                    ? 'bg-[#17818A] text-white text-center rounded-2xl mt-4 shadow-md'
-                    : 'text-[#0a2342]'
+                    ? 'bg-yellow-400 text-brack text-center rounded-2xl mt-4 shadow-md'
+                    : 'text-black'
                     }`}
                 >
                   {item.name}
