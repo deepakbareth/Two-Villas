@@ -59,8 +59,7 @@ const VillaSpaces = () => {
 
             </div>
 
-            {/* Subtle Bottom Divider (Optional, helps separate from the next section) */}
-            <hr className="border-t border-gray-300/60 mt-16" />
+
 
         </section>
     );

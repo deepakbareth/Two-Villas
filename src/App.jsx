@@ -5,12 +5,15 @@ import Navbar from "./Components/Layout/Navbar";
 import Footer from "./Components/Layout/Footer";
 import AllNature from "./Pages/AllNature";
 import BlueDiamond from "./Pages/BlueDiamond";
+// import Navbar from "./Components/Layout/Navbar2Logo";
 
 
 function App() {
   return (
     <div className="min-h-screen ">
       <Navbar />
+      {/* <Navbar/> */}
+
       <Routes>
         <Route path="/twovillas/" element={<Home />} />
         <Route path="/twovillas/villas/all-nature" element={<AllNature />} />

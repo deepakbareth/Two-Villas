@@ -17,9 +17,9 @@ const AccommodationDetails = () => {
     const bedroomsData = [
         { id: 1, title: "Bedroom 1", description: "2 Twin Beds", icons: [Bed, Bed] },
         { id: 2, title: "Bedroom 2", description: "3 Twin Beds", icons: [Bed, Bed, Bed] },
-        { id: 3, title: "Bedroom 3", description: "4 Twin Beds and 1 Twin Bunk Bed", icons: [Bed, Bed, Bed, Bed] },
+        { id: 3, title: "Bedroom 3", description: "4 Twin Beds and 1 Twin Bunk Bed", icons: [Bed, Bed, Bed, Bed, Bed] },
         { id: 4, title: "Bedroom 4", description: "1 Double Bed and 1 Twin Bed", icons: [BedDouble, Bed] },
-        { id: 5, title: "Bedroom 4", description: "2 Twin Beds and 3 Cribs", icons: [Bed, Bed, BedDouble, BedDouble] }, // Using BedDouble as placeholder for cribs to match icon count
+        { id: 5, title: "Bedroom 4", description: "2 Twin Beds and 3 Cribs", icons: [Bed, Bed, BedDouble, BedDouble, BedDouble] }, // Using BedDouble as placeholder for cribs to match icon count
         { id: 6, title: "Bedroom 5", description: "3 Double Sofa Beds", icons: [Sofa, Sofa, Sofa] },
         { id: 7, title: "Bedroom 6", description: "1 Queen Bed and 2 Twin Beds", icons: [BedDouble, Bed, Bed] },
     ];

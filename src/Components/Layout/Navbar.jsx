@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import logo from '../../assets/home/websiteLogo5.png';
+import logo from '../../assets/home/websiteLogo9.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -71,19 +71,19 @@ const Navbar = () => {
       <div className="max-w-[1600px] mx-auto px-6 py-0  lg:px-0">
         <div className="flex justify-between items-center h-15 md:h-13  transition-all duration-500">
 
-          <div className="flex items-end flex-shrink-0 relative md:top-[-22px] top-[-12px] ml-[-15px] md:ml-[-8px]  ">
+          <div className="flex items-end flex-shrink-0 relative md:top-[-22px] top-[-9px] ml-[-20px] md:ml-[-8px]  ">
             <NavLink to="/twovillas/" className="flex items-end group">
               {/* Tree Image */}
               <img
                 src={logo}
                 alt="Two Villas Logo"
-                className="h-20 md:h-25 w-auto object-contain relative z-10 top-[1px]"
+                className="h-15 md:h-23 w-auto object-contain relative z-10 md:top-[0.8px] top-[2px]"
               />
 
               {/* Text: Removed absolute positioning, aligned to the right of the tree */}
               <span
-                style={{ fontFamily: " 'Copperplate Gothic Bold';" }}
-                className="text-[#1a2b3c] md:text-[27px] text-[18px] font-bold uppercase tracking-widest  -ml-7 md:-ml-8 md:mb-[-11.5px] mb-[-9px] "
+                style={{ fontFamily: "'Copperplate Gothic Bold'" }}
+                className="text-[#733d29] md:text-[27px] text-[18px] font-bold uppercase tracking-widest  -ml-5 md:-ml-6 md:mb-[-11.5px] mb-[-9px] "
               >
                 PREMIUM VILLAS
               </span>

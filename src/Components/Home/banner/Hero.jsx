@@ -149,13 +149,11 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
                         <>
                             <span
                                 className="text-sm md:text-xl font-medium tracking-wide  hover:text-white/80   [text-shadow:6px_5px_4px_rgba(0,0,0,5)]">Pause</span>
-                            <Pause fill="currentColor" stroke="none" className="md:w-6 md:h-6 w-5 h-5" />
-                        </>
+                            <Pause fill="currentColor" stroke="none" className="md:w-6 md:h-6 w-5 h-5 drop-shadow-[6px_5px_4px_rgba(0,0,0,1)]" />                        </>
                     ) : (
                         <>
                             <span className="text-sm md:text-xl font-medium tracking-wide  hover:text-white/80   [text-shadow:0px_5px_4px_rgba(0,0,0,5)]">Play</span>
-                            <Play fill="currentColor" stroke="none" className="md:w-6 md:h-6 w-5 h-5" />
-                        </>
+                            <Play fill="currentColor" stroke="none" className="md:w-6 md:h-6 w-5 h-5 drop-shadow-[0px_5px_4px_rgba(0,0,0,1)]" />                        </>
                     )}
                 </button>
             </div>
@@ -177,7 +175,7 @@ const Hero = () => {
             delay: 0, // Starts immediately
             links: {
                 accommodation: "villas/all-nature",
-                gallery: "#villas/all-nature/gallery",
+                gallery: "villas/all-nature/#gallery",
                 calendar: "#availability/all-nature"
             }
         },

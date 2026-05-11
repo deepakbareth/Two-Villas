@@ -30,10 +30,10 @@ const Amenities = () => {
     ];
 
     return (
-        <section className="relative w-full flex justify-center py-16 px-4 sm:px-6">
+        <section className="relative w-full flex justify-center py-16 px-0 md:px-0 sm:px-0">
 
             {/* The Amenities Card */}
-            <div className="w-full max-w-7xl p-8 md:p-10 rounded-3xl backdrop-blur-md bg-gradient-to-br from-white/60 to-white/30 border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.15)] z-10">
+            <div className="w-full max-w-7xl p-4 md:p-10 rounded-3xl backdrop-blur-md bg-gradient-to-br from-white/60 to-white/30 border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.15)] z-10">
 
                 {/* Quick Stats Row */}
                 <div className="flex items-center flex-wrap justify-between border-b border-gray-400/30 pb-6 mb-8">
