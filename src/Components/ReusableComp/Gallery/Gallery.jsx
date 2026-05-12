@@ -69,6 +69,34 @@ const Gallery = ({
         }
     }, [location]);
 
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+
+            if (lightboxIndex === null) return;
+
+            if (e.key === "ArrowRight") {
+                setLightboxIndex((prev) =>
+                    prev === galleryImages.length - 1 ? 0 : prev + 1
+                );
+            }
+
+            if (e.key === "ArrowLeft") {
+                setLightboxIndex((prev) =>
+                    prev === 0 ? galleryImages.length - 1 : prev - 1
+                );
+            }
+
+            if (e.key === "Escape") {
+                closeLightbox();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            window.removeEventListener("keydown", handleKeyDown);
+        };
+    }, [lightboxIndex, galleryImages.length]);
 
     return (
         <main id='gallery' className="min-h-screen scroll-mt-20 ">
@@ -140,9 +168,18 @@ const Gallery = ({
                             className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl mt-12 md:mt-0"
                             onClick={(e) => e.stopPropagation()}
                         />
-                        <div className="absolute -bottom-12 left-0 right-0 flex justify-between items-center px-4 md:px-0 text-white/80">
-                            <span className="text-sm font-medium tracking-wider">{galleryImages[lightboxIndex].alt}</span>
-                            <span className="text-sm font-bold tracking-widest">{lightboxIndex + 1} / {galleryImages.length}</span>
+                        <div className="absolute -bottom-12 left-0 right-0 flex items-center justify-center px-4 md:px-0 text-white/80">
+
+                            {/* Center */}
+                            <span className="md:text-xl text-sm  tracking-wider text-center">
+                                {galleryImages[lightboxIndex].alt}
+                            </span>
+
+                            {/* End / Right */}
+                            <span className="absolute right-4 md:right-0 md:text-xl text-sm  tracking-widest">
+                                {lightboxIndex + 1} / {galleryImages.length}
+                            </span>
+
                         </div>
                     </div>
 
