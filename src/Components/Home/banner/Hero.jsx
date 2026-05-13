@@ -63,11 +63,13 @@ const BeautifulSlider = ({ images, title, delay = 0, links, videoSrc }) => {
             <div className="absolute top-2 font-serif  left-1/2 -translate-x-1/2 z-30 flex items-center justify-center    px-4 py-2.5  w-auto whitespace-nowrap">
                 <Link
                     to={links.accommodation}
+
                     className="text-[#00ffff] text-[11px] md:text-[20px] font-bold md:font-medium tracking-widest uppercase hover:text-white transition-colors px-2 sm:px-4 
           [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]"
                 >
                     Accommodation
                 </Link>
+
 
                 {/* Vertical Divider with a subtle drop shadow so it doesn't vanish */}
                 <span className="w-[1px] h-4 bg-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"></span>
@@ -174,7 +176,7 @@ const Hero = () => {
             video: bannerVideo, // Passed video here
             delay: 0, // Starts immediately
             links: {
-                accommodation: "villas/all-nature",
+                accommodation: "villas/all-nature/#accommodation",
                 gallery: "villas/all-nature/#gallery",
                 calendar: "#availability/all-nature"
             }
