@@ -178,7 +178,7 @@ const Hero = () => {
             links: {
                 accommodation: "villas/all-nature/#accommodation",
                 gallery: "villas/all-nature/#gallery",
-                calendar: "#availability/all-nature"
+                calendar: "villas/all-nature/#calendar"
             }
         },
         {

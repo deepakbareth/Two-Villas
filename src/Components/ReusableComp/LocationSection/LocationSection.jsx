@@ -5,7 +5,7 @@ const LocationSection = ({
     mapEmbedUrl
 }) => {
     return (
-        <section className="py-12 bg-white w-full" id="location">
+        <section id='location' className="py-12 bg-white w-full scroll-mt-16" >
             {/* Container to control max width and padding */}
             <div className="max-w-[1600px] mx-auto px-4 md:px-8">
 
@@ -18,7 +18,7 @@ const LocationSection = ({
                 </div>
 
                 {/* Full-width Map Container */}
-                <div className="w-full h-[400px] md:h-[550px] bg-gray-100 border border-gray-200">
+                <div className="w-full h-[300px] md:h-[500px] bg-gray-100 border border-gray-200 ">
                     <iframe
                         title="Google Maps Location"
                         src={mapEmbedUrl}

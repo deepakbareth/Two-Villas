@@ -10,6 +10,8 @@ const PropertiesSection = ({ propertyName = "all" }) => {
     {
       id: 2,
       title: 'All Nature Villa',
+      link: "/twovillas/villas/all-nature",
+      bookingLink: "/twovillas/villas/all-nature/#calendar",
       specs: { bedrooms: 5, bathrooms: 5, sleeps: 19, sqft: "2712.5" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Free WiFi'],
       image: p2
@@ -17,6 +19,8 @@ const PropertiesSection = ({ propertyName = "all" }) => {
     {
       id: 1,
       title: "Blue Diamond Villa",
+      link: "/twovillas/#villas/blue-diamond",
+      bookingLink: "/twovillas/#villas/blue-diamond/#calendar",
       specs: { bedrooms: 4, bathrooms: 4, sleeps: 21, sqft: "3552.1" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Air conditioning'],
       image: p1

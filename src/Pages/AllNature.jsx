@@ -1,44 +1,40 @@
+import React, { Suspense, lazy } from "react";
 
-// import Gallery from "../Components/ReusableComp/Gallery/Gallery";
-import AccommodationDetails from "../Components/VillasAllNaturePage/AccommodationDetails/AccommodationDetails";
+// 1. Eagerly load the top banner so it appears instantly
 import BannerPage from "../Components/VillasAllNaturePage/bannerPage/bannerPage";
-import VillaSpaces from "../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces";
-import { imageAssets } from "../Data/Gallery";
-import g29 from '../assets/all-nature-villa-img/2-cor_081223 (3).jpg'
-import GalleryPage from "../Components/ReusableComp/Gallery/GalleryTry";
-import LocationSection from "../Components/ReusableComp/LocationSection/LocationSection";
-// import PropertiesSection from "../Components/Home/PropertiesSection/PropertiesSection";
 
-const googleMapsLink = "https://maps.google.com/maps?q=39.4124602,-0.6152275&hl=en&z=15&output=embed";
+import PageSkeleton from "../Components/Layout/PageSkeleton";
+import ScrollHandler from "../Components/Layout/ScrollHandler";
+import Calendar from "../Components/ReusableComp/Calendar/Calendar";
 
+// 3. Lazy load all the heavy "below-the-fold" sections
+const AccommodationDetails = lazy(() => import("../Components/VillasAllNaturePage/AccommodationDetails/AccommodationDetails"));
+const VillaSpaces = lazy(() => import("../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces"));
+const Gallery = lazy(() => import("../Components/ReusableComp/Gallery/GalleryTry"));
+const LocationSection = lazy(() => import("../Components/ReusableComp/LocationSection/LocationSection"));
+
+const googleMapsLink = "https://maps.google.com/maps?q=39.4124602,-0.6152275&hl=en&z=17&t=h&output=embed";
 
 function AllNature() {
     return (
         <>
-
-
+            {/* Renders instantly at the top of the page */}
             <BannerPage />
-            {/* <PropertiesSection propertyName="All Nature Villa" /> */}
-            <AccommodationDetails />
-            <VillaSpaces />
-            {/* <Gallery
-                images={imageAssets}
-                heroImage={g29}
-                subtitle="A Look Inside"
-                title="All Nature Villa Gallery"
-                heading="Our Gallery"
-            /> */}
-            <GalleryPage />
-            <LocationSection
-                title="Location"
-                mapEmbedUrl={googleMapsLink}
-            />
+            <ScrollHandler />
 
-
-
-
+            {/* Everything below the banner is lazy-loaded with a smooth skeleton transition if needed */}
+            <Suspense fallback={<PageSkeleton />}>
+                <AccommodationDetails />
+                <VillaSpaces />
+                <Gallery />
+                <LocationSection
+                    title="Location"
+                    mapEmbedUrl={googleMapsLink}
+                />
+                <Calendar />
+            </Suspense>
         </>
-    )
+    );
 }
 
 export default AllNature;

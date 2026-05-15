@@ -41,7 +41,7 @@ const Navbar = () => {
     {
       name: 'Availability',
       subItems: [
-        { name: 'All Nature Villa', path: '/twovillas/#availability/all-nature' },
+        { name: 'All Nature Villa', path: '/twovillas/villas/all-nature/#calendar' },
         { name: 'Blue Diamond Villa', path: '/twovillas/#availability/blue-diamond' },
       ],
     },
