@@ -6,7 +6,8 @@ import BannerPage from "../Components/VillasAllNaturePage/bannerPage/bannerPage"
 import PageSkeleton from "../Components/Layout/PageSkeleton";
 import ScrollHandler from "../Components/Layout/ScrollHandler";
 import Calendar from "../Components/ReusableComp/Calendar/Calendar";
-
+import FloorPlan2 from "../Components/ReusableComp/FloorPlan/FloorPlan2";
+import OurServices from "../Components/ReusableComp/OurServices/OurServices";
 // 3. Lazy load all the heavy "below-the-fold" sections
 const AccommodationDetails = lazy(() => import("../Components/VillasAllNaturePage/AccommodationDetails/AccommodationDetails"));
 const VillaSpaces = lazy(() => import("../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces"));
@@ -26,7 +27,9 @@ function AllNature() {
             <Suspense fallback={<PageSkeleton />}>
                 <AccommodationDetails />
                 <VillaSpaces />
+                <OurServices />
                 <Gallery />
+                <FloorPlan2 />
                 <LocationSection
                     title="Location"
                     mapEmbedUrl={googleMapsLink}

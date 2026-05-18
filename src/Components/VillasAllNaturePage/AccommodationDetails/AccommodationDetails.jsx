@@ -3,7 +3,7 @@ import { Bed, BedDouble, Sofa, Bath, ShowerHead } from 'lucide-react';
 import Amenities from '../Amenities/Amenities';
 import { useLocation } from 'react-router-dom';
 import PropertiesSection from '../../Home/PropertiesSection/PropertiesSection';
-import FloorPlan2 from '../../ReusableComp/FloorPlan/FloorPlan2';
+
 
 // --- Helper Component to render multiple icons side-by-side ---
 const IconRow = ({ icons }) => (
@@ -85,7 +85,7 @@ const AccommodationDetails = () => {
     return (
         <section id='accommodation' className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 text-[#1a2b3c] bg-white">
             <PropertiesSection propertyName='All Nature Villa' />
-            <FloorPlan2 />
+
             <Amenities />
             {/* --- ROOMS & BEDS SECTION --- */}
             <div className="mb-16 max-w-7xl mx-auto">
