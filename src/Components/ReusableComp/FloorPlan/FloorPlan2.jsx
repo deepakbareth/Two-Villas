@@ -4,9 +4,9 @@ import { FileText, Download, ExternalLink } from 'lucide-react';
 // --- YOUR PDF DATA ---
 // Note: Place your actual PDF files inside the "public" folder of your React project 
 // (e.g., public/pdfs/...) so they can be easily linked and downloaded.
-import pdf1 from '../../../assets/floorPlan/All Nature plot plans.pdf'
-import pdf2 from '../../../assets/floorPlan/All Nature Floor plan 1-Ground floor.pdf'
-import pdf3 from '../../../assets/floorPlan/All Nature Floor plan2- Semi-basement .pdf'
+import pdf1 from '../../../assets/all-nature-floorPlan/All Nature plot plans.pdf'
+import pdf2 from '../../../assets/all-nature-floorPlan/All Nature Floor plan 1-Ground floor.pdf'
+import pdf3 from '../../../assets/all-nature-floorPlan/All Nature Floor plan2- Semi-basement .pdf'
 
 
 
@@ -31,7 +31,7 @@ const planData = [
     }
 ];
 
-const FloorPlan2 = () => {
+const FloorPlan2 = ({ property = "all", data = planData }) => {
     return (
         <section className="py-20 bg-white scroll-mt-16" id="floor-plans">
             <div className="max-w-[1350px] mx-auto px-4 md:px-8">
@@ -46,7 +46,7 @@ const FloorPlan2 = () => {
 
                 {/* PDF Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-                    {planData.map((plan) => (
+                    {data.map((plan) => (
                         <div
                             key={plan.id}
                             className="group bg-white rounded-[24px] p-6 md:p-8 border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-lg hover:border-[#17818A]/30 transition-all duration-300 flex flex-col h-full"

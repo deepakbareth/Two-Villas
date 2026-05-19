@@ -1,6 +1,9 @@
-import React from 'react';
-import { Bed, BedDouble, Sofa, Bath, ShowerHead } from 'lucide-react';
-import Amenities from './Amenities';
+import React, { useEffect } from 'react';
+import { Bed, Sofa, Toilet, ShowerHead } from 'lucide-react';
+import Amenities from '../Amenities/Amenities';
+import { useLocation } from 'react-router-dom';
+import PropertiesSection from '../../Home/PropertiesSection/PropertiesSection';
+
 
 // --- Helper Component to render multiple icons side-by-side ---
 const IconRow = ({ icons }) => (
@@ -15,50 +18,67 @@ const AccommodationDetails = () => {
     // --- Data extracted from your screenshot ---
     // Note: I kept the exact text, but you can easily edit the duplicate names here.
     const bedroomsData = [
-        { id: 1, title: "Bedroom 1", description: "2 Twin Beds", icons: [Bed, Bed] },
+        { id: 1, title: "Bedroom 1", description: "3 Twin Beds", icons: [Bed, Bed, Bed] },
         { id: 2, title: "Bedroom 2", description: "3 Twin Beds", icons: [Bed, Bed, Bed] },
-        { id: 3, title: "Bedroom 3", description: "4 Twin Beds and 1 Twin Bunk Bed", icons: [Bed, Bed, Bed, Bed] },
-        { id: 4, title: "Bedroom 4", description: "1 Double Bed and 1 Twin Bed", icons: [BedDouble, Bed] },
-        { id: 5, title: "Bedroom 4", description: "2 Twin Beds and 3 Cribs", icons: [Bed, Bed, BedDouble, BedDouble] }, // Using BedDouble as placeholder for cribs to match icon count
-        { id: 6, title: "Bedroom 5", description: "3 Double Sofa Beds", icons: [Sofa, Sofa, Sofa] },
-        { id: 7, title: "Bedroom 6", description: "1 Queen Bed and 2 Twin Beds", icons: [BedDouble, Bed, Bed] },
+        { id: 3, title: "Bedroom 3", description: "3 Twin Beds", icons: [Bed, Bed, Bed] },
+        { id: 4, title: "Bedroom 4", description: "4 Twin Beds", icons: [Bed, Bed, Bed, Bed] },
+        { id: 5, title: "Living Room 1", description: "3 Twin Sofa Beds", icons: [Sofa, Sofa, Sofa] },
+        { id: 6, title: "Living Room 2", description: "2 Twin Beds", icons: [Bed, Bed] },
     ];
 
     const bathroomsData = [
         {
             id: 1,
-            title: "4th Bathroom",
-            icons: [Bath, ShowerHead],
-            description: "Soap · Towels provided · Bathtub or shower · Toilet · Shampoo · Hair dryer"
+            title: "Bathroom 1",
+            icons: [Toilet, Toilet, ShowerHead],
+            description: "Soap · Towels provided · Bidet · Toilet · Shower only · Hair dryer"
         },
         {
             id: 2,
-            title: "Bathroom 1",
-            icons: [ShowerHead, ShowerHead],
-            description: "Soap · Towels provided · Bidet · Toilet · Shower only · Shampoo · Hair dryer"
+            title: "Bathroom 2",
+            icons: [Toilet, Toilet, ShowerHead],
+            description: "Soap · Towels provided · Bidet · Toilet · Shower only · Hair dryer"
         },
         {
             id: 3,
-            title: "Bathroom 2",
-            icons: [ShowerHead, ShowerHead],
-            description: "Soap · Towels provided · Bidet · Toilet · Shower only · Shampoo · Hair dryer"
+            title: "Bathroom 3",
+            icons: [Toilet, Toilet, ShowerHead],
+            description: "Soap · Towels provided · Bidet · Toilet · Shower only · Hair dryer"
         },
         {
             id: 4,
-            title: "Bathroom 2",
-            icons: [ShowerHead, ShowerHead],
-            description: "Soap · Towels provided · Bidet · Toilet · Shower only · Shampoo · Hair dryer"
-        },
-        {
-            id: 5,
-            title: "Bathroom 5",
-            icons: [ShowerHead],
-            description: "Soap · Towels provided · Toilet · Shower only · Shampoo · Hair dryer"
-        },
+            title: "Bathroom 4",
+            icons: [Toilet, Toilet, ShowerHead],
+            description: "Soap · Towels provided · Bidet · Toilet · Shower only · Hair dryer"
+        }
     ];
 
+
+
+    const location = useLocation();
+
+
+    // useEffect(() => {
+    //     // Check if the URL has a hash (like #gallery)
+    //     if (location.hash) {
+    //         // Remove the '#' to just get the word 'gallery'
+    //         const targetId = location.hash.substring(1);
+
+    //         // We use a tiny setTimeout to make sure React has completely 
+    //         // finished drawing the page before we try to scroll
+    //         setTimeout(() => {
+    //             const targetElement = document.getElementById(targetId);
+    //             if (targetElement) {
+    //                 targetElement.scrollIntoView({ behavior: 'smooth' });
+    //             }
+    //         }, 100);
+    //     }
+    // }, [location]);
+
     return (
-        <section className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 text-[#1a2b3c] bg-white">
+        <section id='accommodation' className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 text-[#1a2b3c] bg-white">
+            <PropertiesSection propertyName='Blue Diamond Villa' />
+
             <Amenities />
             {/* --- ROOMS & BEDS SECTION --- */}
             <div className="mb-16 max-w-7xl mx-auto">
@@ -66,7 +86,7 @@ const AccommodationDetails = () => {
                     Rooms & Beds
                 </h2>
                 <p className="text-lg md:text-xl font-medium mb-10">
-                    5 Bedrooms <span className="font-normal opacity-80">(sleeps 19)</span>
+                    4 Bedrooms <span className="font-normal opacity-80">(sleeps 21)</span>
                 </p>
 
                 {/* Grid Layout for Bedrooms */}
@@ -89,7 +109,7 @@ const AccommodationDetails = () => {
             {/* --- BATHROOMS SECTION --- */}
             <div className='max-w-7xl mx-auto'>
                 <h2 style={{ fontFamily: "'Futura PT', serif" }} className="text-3xl md:text-4xl font-medium tracking-wide mb-10">
-                    5 Bathrooms
+                    4 Bathrooms
                 </h2>
 
                 {/* Grid Layout for Bathrooms */}
