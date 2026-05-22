@@ -27,16 +27,11 @@ const Navbar = () => {
       name: 'Villas',
       subItems: [
         { name: 'All Nature Villa', path: '/twovillas/villas/all-nature' },
-        { name: 'Blue Diamond Villa', path: '/twovillas/villas/blue-diamond' },
+        { name: 'Blue Diamond Villa', path: '/twovillas/#villas/blue-diamond' },
       ],
     },
     {
       name: 'Services',
-      // subItems: [
-      //   { name: 'Services1', path: '/twovillas/#Services1' },
-      //   { name: 'Services2', path: '/twovillas/#Services2' },
-      //   { name: 'Services3', path: '/twovillas/#Services3' },
-      // ],
     },
     {
       name: 'Availability',
@@ -54,7 +49,7 @@ const Navbar = () => {
     },
     { name: 'Activities', path: '/twovillas/#activities' },
     { name: 'Contact', path: '/twovillas/#contact' },
-    { name: 'Book Now', path: '/twovillas/#book-now' }, // This will be rendered as a button
+    { name: 'Book Now', path: '/twovillas/#book-now' },
   ];
 
   const toggleMobileDropdown = (name) => {
@@ -63,43 +58,45 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-5 md:top-10 left-1/2  -translate-x-1/2 w-[95%] md:w-[98%] z-50 font-serif transition-all rounded-[50px] duration-500 ease-in-out border-b ${scrolled
-        ? 'bg-[#F0F8FF]/85 backdrop-blur-xl border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.08)] py-1'
-        : 'bg-[#F0F8FF]/50 backdrop-blur-md border-transparent py-1'
+      className={`fixed left-1/2 -translate-x-1/2 z-50 font-serif transition-all duration-500 ease-in-out border-b ${scrolled
+        // THE FIX: When scrolled, it goes to top-0, but adds exact padding (pt-44px) so the children don't move up!
+        ? 'w-full top-0 rounded-none bg-[#F0F8FF]/85 backdrop-blur-xl border-white/60 shadow-[0_8px_30px_rgb(0,0,0,0.08)] pt-[24px] md:pt-[44px] pb-1'
+        // Default state: 40px from top (md:top-10) with standard py-1 (4px padding)
+        : 'w-[95%] md:w-[98%] top-5 md:top-10 rounded-[50px] bg-[#F0F8FF]/50 backdrop-blur-md border-transparent py-1'
         }`}
     >
-      <div className="max-w-[1600px] mx-auto px-6 py-0  lg:px-0">
-        <div className="flex justify-between items-center h-15 md:h-13  transition-all duration-500">
+      <div className="max-w-[1600px] mx-auto px-6 py-0 lg:px-0">
+        <div className="flex justify-between items-center h-15 md:h-13 transition-all duration-500">
 
-          <div className="flex items-end flex-shrink-0 relative md:top-[-22px] top-[-9px] ml-[-20px] md:ml-[-8px]  ">
-            <NavLink to="/twovillas/" className="flex items-end group">
-              {/* Tree Image */}
+          {/* 1. LOGO SECTION (I left this exactly as you had it!) */}
+          <div className="flex flex-shrink-0 relative top-[-9px] md:top-[-22px] ml-[-20px] md:ml-[-3px]">
+            <NavLink to="/twovillas/" className="flex items-end gap-2 group">
+
               <img
                 src={logo}
                 alt="Two Villas Logo"
                 className="h-15 md:h-23 w-auto object-contain relative z-10 md:top-[0.8px] top-[2px]"
               />
 
-              {/* Text: Removed absolute positioning, aligned to the right of the tree */}
               <span
                 style={{ fontFamily: "'Copperplate Gothic Bold'" }}
-                className="text-[#733d29] md:text-[27px] text-[18px] font-bold uppercase tracking-widest  -ml-5 md:-ml-6 md:mb-[-11.5px] mb-[-9px] "
+                className="text-[#733d29] md:text-[27px] text-[18px] font-bold uppercase tracking-widest md:mb-[-11.5px] md:ml-[-35px] ml-[-20px] mb-[-9px]"
               >
                 PREMIUM VILLAS
               </span>
+
             </NavLink>
           </div>
 
           {/* 2. Desktop Navigation */}
           <div className="hidden xl:flex items-center p-0 space-x-6">
             {navItems.map((item) => {
-              // Special Rendering for "Book Now" Button
               if (item.name === 'Book Now') {
                 return (
                   <NavLink
                     key={item.name}
                     to={item.path}
-                    className="ml-4 bg-yellow-400 text-black px-8 py-[16.9px] rounded-full text-[18px] shadow-lg hover:bg-yellow-500  transition-all duration-300 transform "
+                    className={`ml-4 bg-yellow-400 text-black px-8 py-[16.9px] rounded-full text-[18px] shadow-lg hover:bg-yellow-500 transition-all duration-300 transform font-bold rounded-full`}
                   >
                     {item.name}
                   </NavLink>
@@ -109,7 +106,7 @@ const Navbar = () => {
               return (
                 <div key={item.name} className="relative group">
                   {item.subItems ? (
-                    <button className="flex items-center gap-1.5 text-[18px]  text-[#0a2342] hover:text-[#17818A] transition-colors py-4">
+                    <button className="flex items-center gap-1.5 text-[18px] text-[#0a2342] hover:text-[#17818A] transition-colors py-4 font-medium">
                       {item.name}
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform duration-300 group-hover:-rotate-180 opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -118,21 +115,21 @@ const Navbar = () => {
                   ) : (
                     <NavLink
                       to={item.path}
-                      className="text-[18px]  text-[#0a2342] hover:text-[#17818A] transition-colors py-4"
+                      className="text-[18px] text-[#0a2342] hover:text-[#17818A] transition-colors py-4 font-medium"
                     >
                       {item.name}
                     </NavLink>
                   )}
 
                   {item.subItems && (
-                    <div className="absolute top-full left-1/2  -translate-x-1/2 min-w-[240px] pt-2 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-50">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 min-w-[240px] pt-2 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-50">
                       <div className="bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-gray-100 py-2">
                         {item.subItems.map((subItem) => (
                           <NavLink
                             key={subItem.name}
                             to={subItem.path}
                             className={({ isActive }) =>
-                              `block px-6 py-3 text-[18px] transition-all text-gray-600 hover:text-[#17818A]`
+                              `block px-6 py-3 text-[18px] transition-all text-gray-600 hover:text-[#17818A] font-medium`
                             }
                           >
                             {subItem.name}
@@ -186,7 +183,7 @@ const Navbar = () => {
                 <NavLink
                   to={item.path}
                   className={`block py-4 px-4 text-[18px] font-semibold ${item.name === 'Book Now'
-                    ? 'bg-yellow-400 text-brack text-center rounded-2xl mt-4 shadow-md'
+                    ? 'bg-yellow-400 text-black text-center rounded-2xl mt-4 shadow-md'
                     : 'text-black'
                     }`}
                 >

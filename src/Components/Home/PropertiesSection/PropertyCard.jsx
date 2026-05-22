@@ -55,7 +55,7 @@ const PropertyCard = ({ property, index }) => {
         </p>
 
         {/* 5. Dual Action Buttons */}
-        <div className="flex items-center gap-10">
+        <div className="flex items-center gap-4 md:gap-10 ">
           <a href={property.link}> <button className="px-10 py-3 cursor-pointer border font-serif rounded-xl border-[#0c2d35] text-[#0c2d35] uppercase tracking-widest text-sm font-bold hover:bg-[#0c2d35] hover:text-white transition-all duration-300">
             Explore
           </button>

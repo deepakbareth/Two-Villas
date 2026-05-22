@@ -2,7 +2,7 @@ import React from 'react';
 import PropertyCard from './PropertyCard';
 
 import p1 from '../../../assets/home/b3.png';
-import p2 from '../../../assets/home/b7.png';
+import p2 from '../../../assets/home/b9.png';
 
 const PropertiesSection = ({ propertyName = "all" }) => {
 
@@ -19,7 +19,7 @@ const PropertiesSection = ({ propertyName = "all" }) => {
     {
       id: 1,
       title: "Blue Diamond Villa",
-      link: "/twovillas/villas/blue-diamond",
+      link: "/twovillas/#villas/blue-diamond",
       bookingLink: "/twovillas/#villas/blue-diamond/#calendar",
       specs: { bedrooms: 4, bathrooms: 4, sleeps: 21, sqft: "3552.1" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Air conditioning'],

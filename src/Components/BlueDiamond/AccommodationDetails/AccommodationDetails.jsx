@@ -79,7 +79,7 @@ const AccommodationDetails = () => {
         <section id='accommodation' className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-16 text-[#1a2b3c] bg-white">
             <PropertiesSection propertyName='Blue Diamond Villa' />
 
-            <Amenities />
+            {/* <Amenities /> */}
             {/* --- ROOMS & BEDS SECTION --- */}
             <div className="mb-16 max-w-7xl mx-auto">
                 <h2 style={{ fontFamily: "'Futura PT', serif" }} className="text-4xl md:text-5xl font-medium tracking-wide mb-2">

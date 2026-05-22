@@ -10,7 +10,7 @@ const LocationSection = ({
             <div className="max-w-[1600px] mx-auto px-4 md:px-8">
 
                 {/* Simple Header matching the screenshot */}
-                <div className="mb-6">
+                <div className="mb-10">
                     <h2 className="text-4xl text-center md:text-6xl font-serif text-[#17818A]">
                         {title}
                     </h2>

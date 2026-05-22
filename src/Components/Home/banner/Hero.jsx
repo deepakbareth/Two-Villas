@@ -188,9 +188,9 @@ const Hero = () => {
             video: verticleVid, // Passed video here
             delay: 2500, // Starts halfway through the first slider's cycle (2.5s)
             links: {
-                accommodation: "villas/blue-diamond/#accommodation",
-                gallery: "villas/blue-diamond/#gallery",
-                calendar: "villas/blue-diamond/#calendar"
+                accommodation: "#villas/blue-diamond/#accommodation",
+                gallery: "#villas/blue-diamond/#gallery",
+                calendar: "#villas/blue-diamond/#calendar"
             }
         }
     ];

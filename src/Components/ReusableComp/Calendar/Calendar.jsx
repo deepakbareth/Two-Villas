@@ -36,23 +36,70 @@ const Calendar = () => {
     };
 
     // --- SELECTION LOGIC ---
-    const handleDateClick = (date) => {
-        if (getIsUnavailable(date)) return;
+   const handleDateClick = (date) => {
 
-        if (checkIn && checkOut) {
+    // CLICKED BOOKED DATE
+    if (getIsUnavailable(date)) {
+
+        alert("This date is already booked.");
+
+        // RESET EVERYTHING
+        setCheckIn(null);
+        setCheckOut(null);
+
+        return;
+    }
+
+    // BOTH ALREADY SELECTED → START NEW SELECTION
+    if (checkIn && checkOut) {
+        setCheckIn(date);
+        setCheckOut(null);
+        return;
+    }
+
+    // FIRST DATE
+    if (!checkIn) {
+        setCheckIn(date);
+        return;
+    }
+
+    // SECOND DATE
+    if (checkIn && !checkOut) {
+
+        // IF USER SELECTS SMALLER DATE
+        if (date <= checkIn) {
             setCheckIn(date);
-            setCheckOut(null);
-        } else if (!checkIn) {
-            setCheckIn(date);
-        } else if (checkIn && !checkOut) {
-            if (date <= checkIn) {
-                setCheckIn(date);
-            } else {
-                setCheckOut(date);
-                setIsModalOpen(true);
-            }
+            return;
         }
-    };
+
+        // CHECK ALL DATES BETWEEN
+        let current = new Date(checkIn);
+
+        current.setDate(current.getDate() + 1);
+
+        while (current < date) {
+
+            if (getIsUnavailable(current)) {
+
+                alert(
+                    "Selected range contains booked dates."
+                );
+
+                // RESET EVERYTHING
+                setCheckIn(null);
+                setCheckOut(null);
+
+                return;
+            }
+
+            current.setDate(current.getDate() + 1);
+        }
+
+        // SAFE
+        setCheckOut(date);
+        setIsModalOpen(true);
+    }
+};
 
     const isDateInRange = (date) => {
         if (checkIn && checkOut) {
@@ -123,7 +170,7 @@ const Calendar = () => {
             let cellClasses = "w-10 h-10 flex items-center justify-center text-sm transition-all duration-200 ";
 
             if (disabled) {
-                cellClasses += "bg-gray-200 text-gray-400 line-through rounded-none cursor-not-allowed";
+                cellClasses += "bg-red-200 text-gray-900 line-through rounded-none cursor-not-allowed";
             } else if (isCheckIn || isCheckOut) {
                 cellClasses += "bg-[#17818A] text-white font-bold rounded-full shadow-md cursor-pointer";
             } else if (inRange) {
@@ -154,7 +201,7 @@ const Calendar = () => {
                         <div key={day} className="text-xs font-bold text-gray-400 uppercase">{day}</div>
                     ))}
                 </div>
-                <div className="grid grid-cols-7 gap-y-2 gap-x-1 justify-items-center">
+                <div className="grid grid-cols-7 gap-y-2 gap-x-1 justify-items-center   ">
                     {days}
                 </div>
             </div>
@@ -195,7 +242,7 @@ const Calendar = () => {
                 </div>
             </div>
 
-            {isModalOpen && (
+            {/* {isModalOpen && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
                     <div className="bg-white w-full max-w-md rounded-3xl overflow-hidden shadow-2xl relative animate-in fade-in zoom-in duration-300">
 
@@ -262,7 +309,8 @@ const Calendar = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
+            
         </div>
     );
 };
