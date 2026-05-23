@@ -62,11 +62,18 @@ const PropertyBanner = () => {
                                 className="w-full h-full object-cover hover:scale-105 duration-700"
                             />
 
-                            {/* Floating Gallery Button */}
-                            <button className="absolute bottom-4 left-[38%] md:right-4 flex items-center gap-2 bg-white/90 backdrop-blur-sm text-[#1a2b3c] px-4 py-2 md:px-5 md:py-2.5 rounded-xl font-medium shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:bg-white hover:scale-105 transition-all duration-300 z-10 cursor-pointer">
-                                <Image className="w-4 h-4 md:w-5 md:h-5 stroke-[2]" />
-                                <span className="text-sm md:text-base tracking-wide">Gallery</span>
-                            </button>
+                            {/* PERFECTED GALLERY BUTTON */}
+                            <a
+                                href="#gallery"
+                                className="absolute bottom-4 right-4 md:bottom-5 md:right-5 z-10"
+                            >
+                                <button
+                                    className="flex items-center gap-2.5 bg-[#f2f4f7] text-[#1a2b3c] px-4 py-2 md:px-5 md:py-2.5 rounded-2xl shadow-[0_2px_10px_rgba(0,0,0,0.15)] hover:bg-white hover:shadow-[0_6px_20px_rgba(0,0,0,0.2)] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer border border-white/60"
+                                >
+                                    <Image className="w-4 h-4 md:w-5 md:h-5 stroke-[2.5]" />
+                                    <span className="text-sm md:text-base tracking-wide font-medium">Gallery</span>
+                                </button>
+                            </a>
                         </div>
 
                     </div>

@@ -14,11 +14,16 @@ const AccommodationDetails = lazy(() => import("../Components/VillasAllNaturePag
 const Gallery = lazy(() => import("../Components/ReusableComp/Gallery/GalleryTry"));
 const LocationSection = lazy(() => import("../Components/ReusableComp/LocationSection/LocationSection"));
 
-const googleMapsLink = "https://maps.google.com/maps?q=39.4124602,-0.6152275&hl=en&z=19&t=h&output=embed";
 import bathroomImg from "../assets/all-nature-villa-img/22-ELEGIDA-115339-F.jpg";
 import floorData from "../Data/floorData";
 import villasSpaceImg from "../Data/villasSpaceImgAllNature";
-import ImageSlider from "../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces2";
+import VillaSpaces2 from "../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces2";
+import { imageAssets } from '../Data/Gallery';
+
+const bgImage = imageAssets[0];
+
+
+const googleMapsLink = "https://maps.google.com/maps?q=39.4124602,-0.6152275&hl=en&z=19&t=h&output=embed";
 
 
 const amenitiesList = [
@@ -56,7 +61,7 @@ function AllNature() {
                     titleColor="#0a2342"
                 />
                 {/* <VillaSpaces /> */}
-                <ImageSlider images={villasSpaceImg} />
+                <VillaSpaces2 images={villasSpaceImg} />
 
                 {/* <OurServices /> */}
                 <FloorPlan2 data={floorData} />
@@ -65,7 +70,7 @@ function AllNature() {
                     mapEmbedUrl={googleMapsLink}
                 />
                 <Calendar />
-                <Gallery />
+                <Gallery imageAssets={imageAssets} bgImage={bgImage} />
             </Suspense>
         </>
     );

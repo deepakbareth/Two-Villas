@@ -27,7 +27,7 @@ const Navbar = () => {
       name: 'Villas',
       subItems: [
         { name: 'All Nature Villa', path: '/twovillas/villas/all-nature' },
-        { name: 'Blue Diamond Villa', path: '/twovillas/#villas/blue-diamond' },
+        { name: 'Blue Diamond Villa', path: '/twovillas/villas/blue-diamond' },
       ],
     },
     {
@@ -37,7 +37,7 @@ const Navbar = () => {
       name: 'Availability',
       subItems: [
         { name: 'All Nature Villa', path: '/twovillas/villas/all-nature/#calendar' },
-        { name: 'Blue Diamond Villa', path: '/twovillas/#availability/blue-diamond' },
+        { name: 'Blue Diamond Villa', path: '/twovillas/villas/blue-diamond/#calendar' },
       ],
     },
     {

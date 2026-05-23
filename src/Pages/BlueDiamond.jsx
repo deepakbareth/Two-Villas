@@ -10,8 +10,15 @@ import bathroomImg from "../assets/Blue-diamond-villa-img/59-baño 3 corr.jpg";
 import VillaSpaces2 from "../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces2";
 import villasSpaceImgBlueDiamond from "../Data/villasSpaceImgBlueDiamond";
 import LocationSection from "../Components/ReusableComp/LocationSection/LocationSection";
+import FloorPlan2 from "../Components/ReusableComp/FloorPlan/FloorPlan2";
+import blue_diamond_floorData from "../Data/blue-diamond-floordata";
+import GalleryPage from "../Components/ReusableComp/Gallery/GalleryTry";
+import { imageAssets } from "../Data/BlueDiamondGallery";
+const bgImage = imageAssets[0];
+
+
 const googleMapsLink =
-    "https://maps.google.com/maps?q=39.392498,-0.6108777&hl=en&z=19&t=h&output=embed";
+    "https://maps.google.com/maps?q=39.392498,-0.6108777&hl=en&z=18&t=h&output=embed";
 
 const amenitiesList = [
     { label: "Soap", Icon: Droplets },
@@ -40,10 +47,11 @@ function BlueDiamond() {
                 titleColor="#0a2342"
             />
             <VillaSpaces2 images={villasSpaceImgBlueDiamond} />
+            <FloorPlan2 data={blue_diamond_floorData} />
             <LocationSection title="Location" mapEmbedUrl={googleMapsLink} />
-            {/* <VillaSpaces /> */}
-            {/* <OurServices /> */}
+
             <Calendar />
+            <GalleryPage imageAssets={imageAssets} bgImage={bgImage} />
 
         </>
     )

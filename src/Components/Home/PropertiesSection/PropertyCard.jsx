@@ -22,7 +22,7 @@ const PropertyCard = ({ property, index }) => {
 
         {/* 1. Location Tag */}
         <span className="text-[#c4a661]  tracking-[0.3em] text-sm font-semibold mb-3">
-          {"Villa " + (index + 1)}
+          {`Villa ${property.title === "All Nature Villa" ? "1" : "2"}`}
         </span>
 
         {/* 2. Main Heading */}

@@ -13,13 +13,10 @@ import {
 
 
 import { useLocation } from 'react-router-dom';
-import { imageAssets } from '../../../Data/Gallery';
 
 
 
-const bgImage = imageAssets[0];
-
-const GalleryPage = () => {
+const GalleryPage = ({ imageAssets, bgImage }) => {
     const [lightboxIndex, setLightboxIndex] = useState(null);
     const [isFullscreen, setIsFullscreen] = useState(false);
     const [zoomLevel, setZoomLevel] = useState(1);
