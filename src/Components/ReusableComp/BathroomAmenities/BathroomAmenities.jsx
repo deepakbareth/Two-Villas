@@ -32,7 +32,7 @@ const BathroomAmenities = ({
                             >
                                 {title}
                             </h2>
-                    
+
 
                             <p className="text-gray-500 text-lg leading-relaxed max-w-lg">
                                 {description}
@@ -71,21 +71,21 @@ const BathroomAmenities = ({
                             })}
                         </div>
 
-                      
+
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
                     <div className="w-full lg:w-1/2 px-3">
-                        <div className="relative rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] group">
+                        <div className="relative rounded-[32px] overflow-hidden ">
 
                             <img
                                 src={image}
                                 alt={imageAlt}
-                                className="w-full h-[300px] lg:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                                className="w-full h-[300px] lg:h-[450px] object-cover transition-transform duration-700 ease-in-out"
                             />
 
                             {/* BORDER */}
-                            <div className="absolute inset-4 border border-white/30 rounded-[24px] pointer-events-none z-10"></div>
+                            {/* <div className="absolute inset-4 border border-white/30 rounded-[24px] pointer-events-none z-10"></div> */}
 
                             {/* OVERLAY */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>

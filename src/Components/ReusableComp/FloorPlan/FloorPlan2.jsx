@@ -24,49 +24,28 @@ const FloorPlan2 = ({
                 {/* PDF Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     {data.map((plan) => (
-                        <div
-                            key={plan.id}
-                            className="relative group rounded-[24px] overflow-hidden border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-xl hover:border-[#17818A]/50 transition-all duration-500 flex flex-col h-full min-h-[300px]"
-                        >
-                            {/* --- BACKGROUND IMAGE LAYER --- */}
-                            <div className="absolute inset-0 z-0 overflow-hidden">
+                        <div key={plan.id} className="flex flex-col gap-4 h-full">
+
+                            {/* --- IMAGE BOX (No overlays) --- */}
+                            <div
+                                className="relative group rounded-[24px] bg-white overflow-hidden border border-gray-200 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-xl transition-all duration-500 h-[300px] md:h-[350px] w-full"
+                            >
                                 <img
                                     src={plan.bgImage}
-                                    alt="Background"
-                                    className="w-full h-full object-contain transition-transform duration-700 "
+                                    alt={plan.title}
+                                    className="w-full h-full object-contain transition-transform duration-700  p-4"
                                 />
-                                {/* Light overlay for text readability */}
-                                <div className="absolute inset-0 transition-all duration-300 "></div>
                             </div>
 
-                            {/* --- CONTENT LAYER --- */}
-                            <div className="relative z-10 p-6 md:p-8 flex flex-col h-full">
+                            {/* --- BUTTON (Completely below the image) --- */}
+                            <button
+                                onClick={() => setActiveLightboxImage(plan)}
+                                className="w-full cursor-pointer flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-white shadow-sm border border-[#17818A]/20 text-[#17818A] font-bold hover:bg-[#17818A] hover:text-white transition-all duration-300 group/btn"
+                            >
+                                <ZoomIn className="w-5 h-5 transition-transform group-hover/btn:scale-110" />
+                                <span>{plan.title}</span>
+                            </button>
 
-
-                                {/* Buttons Container (Pushed to bottom) */}
-                                <div className="mt-auto pt-6 flex items-center gap-3">
-
-                                    {/* VIEW BUTTON - Opens the Lightbox */}
-                                    <button
-                                        onClick={() => setActiveLightboxImage(plan)}
-                                        className="flex-1 cursor-pointer flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white shadow-sm border border-gray-100 text-[#17818A] font-bold hover:bg-[#17818A] hover:text-white transition-all duration-300 group/btn"
-                                    >
-                                        <ZoomIn className="w-5 h-5 transition-transform group-hover/btn:scale-110" />
-                                        <span>{plan.title}</span>
-                                    </button>
-
-                                    {/* DOWNLOAD BUTTON */}
-                                    {/* <a
-                                        href={plan.fileUrl}
-                                        download
-                                        className="flex-none flex items-center justify-center w-12 h-12 rounded-xl bg-white shadow-sm border border-gray-100 text-gray-600 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition-all duration-300"
-                                        title={`Download ${plan.title}`}
-                                    >
-                                        <Download className="w-5 h-5" />
-                                    </a> */}
-
-                                </div>
-                            </div>
                         </div>
                     ))}
                 </div>
