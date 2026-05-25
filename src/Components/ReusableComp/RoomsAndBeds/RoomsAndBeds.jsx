@@ -28,7 +28,7 @@ const RoomsAndBeds = ({
                             <img
                                 src={imageSrc}
                                 alt={imageAlt}
-                                className="w-full h-[300px] lg:h-[450px] object-cover transition-transform duration-700 ease-in-out"
+                                className="w-full h-[300px] lg:h-[450px] object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                             />
                             <div className="absolute inset-4 border border-white/30 rounded-[24px] pointer-events-none"></div>
                         </div>

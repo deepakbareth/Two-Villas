@@ -11,14 +11,6 @@ import bg3 from '../assets/all-nature-floorPlan/f11.png';
 const floorData = [
     {
         id: 1,
-        title: "Garden Plot Plan",
-        description:
-            "Detailed layout of the main living areas, kitchen, and outdoor spaces.",
-        fileUrl: pdf1,
-        bgImage: bg1,
-    },
-    {
-        id: 2,
         title: "Ground Floor Plan",
         description:
             "Explore the lower level layout, including additional rooms and amenities.",
@@ -26,12 +18,20 @@ const floorData = [
         bgImage: bg2,
     },
     {
-        id: 3,
+        id: 2,
         title: "Semi-Basement Plan",
         description:
             "Complete property overview including the pool, gardens, and property boundaries.",
         fileUrl: pdf3,
         bgImage: bg3,
+    },
+    {
+        id: 3,
+        title: "Garden Plot Plan",
+        description:
+            "Detailed layout of the main living areas, kitchen, and outdoor spaces.",
+        fileUrl: pdf1,
+        bgImage: bg1,
     },
 ];
 

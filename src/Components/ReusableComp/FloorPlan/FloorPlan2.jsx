@@ -36,7 +36,7 @@ const FloorPlan2 = ({
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                                 {/* Light overlay for text readability */}
-                                <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px] transition-all duration-300 group-hover:bg-white/20"></div>
+                                <div className="absolute inset-0 transition-all duration-300 "></div>
                             </div>
 
                             {/* --- CONTENT LAYER --- */}
@@ -95,11 +95,11 @@ const FloorPlan2 = ({
                         </button>
 
                         {/* Title Display */}
+
+                        {/* The Full Size Background Image */}
                         <h3 className="absolute -top-10 left-0 text-white font-serif text-2xl tracking-wide drop-shadow-md">
                             {activeLightboxImage.title}
                         </h3>
-
-                        {/* The Full Size Background Image */}
                         <img
                             src={activeLightboxImage.bgImage}
                             alt={activeLightboxImage.title}

@@ -143,7 +143,7 @@ const VillaSpaces2 = ({ images = [] }) => {
                                     <img
                                         src={img.src || img}
                                         alt={img.alt || `Villa ${index + 1}`}
-                                        className="w-full h-[260px] md:h-[300px] object-cover transition"
+                                        className="w-full h-[260px] md:h-[300px] object-cover transition "
                                         draggable="false"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
