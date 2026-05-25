@@ -33,7 +33,7 @@ const FloorPlan2 = ({
                                 <img
                                     src={plan.bgImage}
                                     alt="Background"
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    className="w-full h-full object-contain transition-transform duration-700 "
                                 />
                                 {/* Light overlay for text readability */}
                                 <div className="absolute inset-0 transition-all duration-300 "></div>
