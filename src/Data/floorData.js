@@ -4,7 +4,7 @@ import pdf1 from '../assets/all-nature-floorPlan/All Nature plot plans.pdf';
 import pdf2 from '../assets/all-nature-floorPlan/All Nature Floor plan 1-Ground floor.pdf';
 import pdf3 from '../assets/all-nature-floorPlan/All Nature Floor plan2- Semi-basement .pdf';
 
-import bg1 from '../assets/all-nature-floorPlan/f9.png';
+import bg1 from '../assets/all-nature-floorPlan/f12.png';
 import bg2 from '../assets/all-nature-floorPlan/f10.png';
 import bg3 from '../assets/all-nature-floorPlan/f11.png';
 

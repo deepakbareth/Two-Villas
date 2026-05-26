@@ -38,13 +38,24 @@ const FloorPlan2 = ({
                             </div>
 
                             {/* --- BUTTON (Completely below the image) --- */}
-                            <button
-                                onClick={() => setActiveLightboxImage(plan)}
-                                className="w-full cursor-pointer flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-white shadow-sm border border-[#17818A]/20 text-[#17818A] font-bold hover:bg-[#17818A] hover:text-white transition-all duration-300 group/btn"
-                            >
-                                <ZoomIn className="w-5 h-5 transition-transform group-hover/btn:scale-110" />
-                                <span>{plan.title}</span>
-                            </button>
+                            <div className="flex items-stretch gap-3 w-full">
+                                <button
+                                    onClick={() => setActiveLightboxImage(plan)}
+                                    className="w-full cursor-pointer flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-white shadow-sm border border-[#17818A]/20 text-[#17818A] font-bold hover:bg-[#17818A] hover:text-white transition-all duration-300 group/btn"
+                                >
+                                    <ZoomIn className="w-5 h-5 transition-transform group-hover/btn:scale-110" />
+                                    <span>{plan.title}</span>
+                                </button>
+                                {/* DOWNLOAD PDF BUTTON */}
+                                <a
+                                    href={plan.fileUrl} // Make sure this points to your PDF!
+                                    download
+                                    className="flex-none w-14 flex items-center justify-center rounded-xl bg-white shadow-sm border border-[#17818A]/20 text-[#17818A] hover:bg-[#17818A] hover:text-white transition-all duration-300"
+                                    title={`Download ${plan.title} PDF`}
+                                >
+                                    <Download className="w-5 h-5" />
+                                </a>
+                            </div>
 
                         </div>
                     ))}

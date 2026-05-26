@@ -7,6 +7,7 @@ import img4 from '../assets/all-nature-villa-space/11-ELEGIDA COR 2_200104.jpg';
 import img5 from '../assets/all-nature-villa-space/12-elegida cor_201019  (2).jpg';
 import img6 from '../assets/all-nature-villa-space/7-IMG_20200829_154232---COR.jpg';
 import img7 from '../assets/all-nature-villa-space/10-IMG_20160413_190911 (1).jpg';
+import img8 from '../assets/all-nature-villa-space/17-elegida cor_080830 (2).jpg';
 
 
 const villasSpaceImg = [
@@ -19,38 +20,44 @@ const villasSpaceImg = [
     {
         id: 2,
         src: img2,
-        alt: "Jacuzzi",
-        title: "Jacuzzi"
+        alt: "Hot Spa",
+        title: "Hot Spa"
     },
     {
         id: 3,
         src: img3,
-        alt: "Ping Pong table",
-        title: "Ping Pong table"
+        alt: "Ping Pong Table",
+        title: "Ping Pong Table"
     },
     {
         id: 4,
         src: img4,
-        alt: "Chill out beds",
-        title: "Chill out beds"
+        alt: "Chill Out Beds",
+        title: "Chill Out Beds"
     },
     {
         id: 5,
         src: img5,
-        alt: "Bar and Barbeque",
-        title: "Bar and Barbeque"
+        alt: "Bar & Barbeque",
+        title: "Bar & Barbeque"
     },
     {
         id: 6,
         src: img6,
-        alt: "Spectacular pool",
-        title: "Spectacular pool"
+        alt: "Unique Design Pool",
+        title: "Unique Design Pool"
     },
     {
         id: 7,
         src: img7,
-        alt: "Outdoor large lounge",
-        title: "Outdoor large lounge"
+        alt: "Outdoor Lounge",
+        title: "Outdoor Lounge"
+    },
+    {
+        id: 8,
+        src: img8,
+        alt: "Kitchen",
+        title: "Kitchen"
     },
 ];
 

@@ -33,7 +33,7 @@ const PropertyCard = ({ property, index }) => {
         {/* 3. Minimal Specs Row */}
         <div className="flex flex-wrap items-center gap-6 mb-8 text-[#0c2d35]/80">
           <div className="flex items-center gap-2">
-            <Icon name="Sleeps" /> <span className="text-lg">+{property.specs.sleeps}</span>
+            <Icon name="Sleeps" /> <span className="text-lg">{property.specs.sleeps}</span>
             sleeps
           </div>
           <div className="flex items-center gap-2">

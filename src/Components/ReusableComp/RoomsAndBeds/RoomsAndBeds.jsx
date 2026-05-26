@@ -23,19 +23,19 @@ const RoomsAndBeds = ({
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
 
                     {/* LEFT SIDE: Image */}
-                    <div className="w-full lg:w-1/2">
-                        <div className="relative rounded-[25px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
+                    <div className="w-full lg:w-[54%]">
+                        {/* Added aspect-[16/10] here and updated the shadow to match the property card */}
+                        <div className="relative rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
                             <img
                                 src={imageSrc}
                                 alt={imageAlt}
-                                className="w-full h-[300px] lg:h-[450px] md:object-cover object-contain transition-transform duration-700 ease-in-out"
+                                className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
                             />
-                            {/* <div className="absolute inset-4 border border-white/30 rounded-[24px] pointer-events-none"></div> */}
                         </div>
                     </div>
 
                     {/* RIGHT SIDE: Content */}
-                    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <div className="w-full lg:w-[46%] flex flex-col justify-center">
                         <div className="mb-2 border-b border-gray-200 pb-2">
 
                             <h2
@@ -50,7 +50,7 @@ const RoomsAndBeds = ({
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-6">
                             {rooms.map((room, index) => (
                                 <div key={index} className="flex flex-col">
-                                    <h3 className="text-xl font-serif text-[#0a2342] mb-4">{room.name}</h3>
+                                    <h3 className="text-xl font-serif text-[#0a2342] mb-0">{room.name}</h3>
 
                                     <div className="space-y-2">
                                         {room.beds.map((bed, bedIndex) => {

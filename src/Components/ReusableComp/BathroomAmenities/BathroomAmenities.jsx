@@ -17,10 +17,10 @@ const BathroomAmenities = ({
         <section className={`py-5 ${bgColor}`} id={id}>
             <div className="max-w-7xl mx-auto px-4 sm:px-0 lg:px-0">
 
-                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-12 lg:gap-20">
 
                     {/* LEFT SIDE */}
-                    <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <div className="w-full lg:w-1/3 flex flex-col justify-center">
 
                         {/* HEADING */}
                         <div className="mb-10">
@@ -76,12 +76,12 @@ const BathroomAmenities = ({
 
                     {/* RIGHT SIDE IMAGE */}
                     {/* LEFT SIDE: Image */}
-                    <div className="w-full lg:w-1/2">
-                        <div className="relative rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
+                    <div className="w-full lg:w-[53%]">
+                        <div className="relative rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
                             <img
                                 src={image}
                                 alt={imageAlt}
-                                className="w-full h-[300px] lg:h-[450px] md:object-cover object-contain  transition-transform duration-700 ease-in-out"
+                                className="w-full h-full object-cover transition-transform duration-700 ease-in-out"
                             />
                             {/* <div className="absolute inset-4 border border-white/30 rounded-[24px] pointer-events-none"></div> */}
                         </div>

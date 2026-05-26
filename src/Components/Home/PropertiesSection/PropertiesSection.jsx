@@ -14,7 +14,7 @@ const PropertiesSection = ({ propertyName = "all" }) => {
       title: 'All Nature Villa',
       link: "/twovillas/villas/all-nature",
       bookingLink: "/twovillas/villas/all-nature/#calendar",
-      specs: { bedrooms: 5, bathrooms: 5, sleeps: 19, sqft: "2712.5" },
+      specs: { bedrooms: 5, bathrooms: 5, sleeps: 22, sqft: "2712.5" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Free WiFi'],
     },
     {

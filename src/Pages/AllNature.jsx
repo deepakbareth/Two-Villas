@@ -14,7 +14,7 @@ const AccommodationDetails = lazy(() => import("../Components/VillasAllNaturePag
 const Gallery = lazy(() => import("../Components/ReusableComp/Gallery/GalleryTry"));
 const LocationSection = lazy(() => import("../Components/ReusableComp/LocationSection/LocationSection"));
 
-import bathroomImg from "../assets/all-nature-villa-img/22-ELEGIDA-115339-F.jpg";
+import bathroomImg from "../assets/home/bathhroom2.png";
 import floorData from "../Data/floorData";
 import villasSpaceImg from "../Data/villasSpaceImgAllNature";
 import VillaSpaces2 from "../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces2";
