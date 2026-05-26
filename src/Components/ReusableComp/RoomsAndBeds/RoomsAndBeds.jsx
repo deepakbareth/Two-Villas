@@ -47,10 +47,10 @@ const RoomsAndBeds = ({
                             {subtitle && <p className="text-xl text-slate-600 font-medium">{subtitle}</p>}
                         </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-6">
                             {rooms.map((room, index) => (
                                 <div key={index} className="flex flex-col">
-                                    <h3 className="text-xl font-serif text-[#0a2342] mb-0">{room.name}</h3>
+                                    <h3 className="text-xl font-serif text-[#0a2342] mb-4">{room.name}</h3>
 
                                     <div className="space-y-2">
                                         {room.beds.map((bed, bedIndex) => {
