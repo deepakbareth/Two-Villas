@@ -24,11 +24,11 @@ const RoomsAndBeds = ({
 
                     {/* LEFT SIDE: Image */}
                     <div className="w-full lg:w-1/2">
-                        <div className="relative rounded-[32px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
+                        <div className="relative rounded-[25px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
                             <img
                                 src={imageSrc}
                                 alt={imageAlt}
-                                className="w-full h-[300px] lg:h-[450px] object-contain  transition-transform duration-700 ease-in-out"
+                                className="w-full h-[300px] lg:h-[450px] md:object-cover object-contain transition-transform duration-700 ease-in-out"
                             />
                             {/* <div className="absolute inset-4 border border-white/30 rounded-[24px] pointer-events-none"></div> */}
                         </div>

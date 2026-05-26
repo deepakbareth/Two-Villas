@@ -4,7 +4,7 @@ import Amenities from '../Amenities/Amenities';
 import { useLocation } from 'react-router-dom';
 import PropertiesSection from '../../Home/PropertiesSection/PropertiesSection';
 import RoomsAndBeds from '../../ReusableComp/RoomsAndBeds/RoomsAndBeds';
-import bedroomImg from '../../../assets/home/b10.png';
+import bedroomImg from '../../../assets/home/bedroom.png';
 
 
 // --- Helper Component to render multiple icons side-by-side ---
