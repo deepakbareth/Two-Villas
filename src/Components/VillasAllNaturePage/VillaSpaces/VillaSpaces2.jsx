@@ -259,7 +259,7 @@ const VillaSpaces2 = ({ images = [] }) => {
                             onClick={() => scrollToDot(index)}
                             aria-label={`Go to image ${index + 1}`}
                             className={`rounded-full transition-all duration-300 ${activeIndex === index
-                                ? 'w-3 h-3 bg-[#d6a528] shadow-lg'
+                                ? 'w-2 h-2 bg-[#d6a528] shadow-lg'
                                 : 'w-2 h-2 bg-[#0a2342]/40 hover:bg-[#0a2342]/60 active:scale-110'
                                 }`}
                         />

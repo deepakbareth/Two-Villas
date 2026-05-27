@@ -5,7 +5,7 @@ const RoomsAndBeds = ({
     imageSrc,
     imageAlt = "Luxury Bedroom",
     title = "5 Bedrooms",
-    subtitle = "Standard sleep 13, Max capacity 22",
+    subtitle = "Standard sleep 13, Max. capacity 22",
     rooms = []
 }) => {
 
@@ -39,9 +39,9 @@ const RoomsAndBeds = ({
                         <div className="mb-2 border-b border-gray-200 pb-2">
 
                             <h2
-                                style={{ fontFamily: "'Futura PT', serif" }}
-                                className="text-3xl md:text-5xl font-medium tracking-wide mb-0  text-[#1a2b3c]"
-                            >
+                                // style={{ fontFamily: "'Futura PT', serif" }}
+                                className="text-3xl md:text-4xl font-serif text-[#17818A] mb-6 tracking-tight">
+
                                 {title}
                             </h2>
                             {subtitle && <p className="text-xl text-slate-600 font-medium">{subtitle}</p>}

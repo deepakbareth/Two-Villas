@@ -17,7 +17,7 @@ const BathroomAmenities = ({
         <section className="py-5 md:py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-0 lg:px-0">
 
-                <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-12 lg:gap-20">
+                <div className="flex flex-col lg:flex-row  items-start lg:justify-between gap-12 lg:gap-20">
 
                     {/* LEFT SIDE */}
                     <div className="w-full lg:w-1/3 flex flex-col justify-center">
@@ -27,9 +27,9 @@ const BathroomAmenities = ({
 
 
                             <h2
-                                style={{ fontFamily: "'Futura PT', serif" }}
-                                className="text-3xl md:text-5xl font-medium tracking-wide mb-6  text-[#1a2b3c]"
-                            >
+                                // style={{ fontFamily: "'Futura PT', serif" }}
+                                className="text-3xl md:text-4xl font-serif text-[#17818A] mb-6 tracking-tight">
+
                                 {title}
                             </h2>
 
@@ -40,7 +40,7 @@ const BathroomAmenities = ({
                         </div>
 
                         {/* AMENITIES */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 md:gap-y-12 gap-x-8">
                             {amenitiesList.map((item, index) => {
                                 const IconComponent = item.Icon;
 
