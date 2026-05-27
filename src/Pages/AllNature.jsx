@@ -51,7 +51,7 @@ function AllNature() {
                     id="bathrooms"
 
                     title="5 Bathrooms"
-                    description="Start and end your day in absolute comfort. Our meticulously designed bathrooms offer a serene, spa-like atmosphere equipped with all the premium essentials you need for a refreshing stay."
+                    description="Start and end your day in absolute comfort. Our meticulously designed bathrooms offer a serene, atmosphere equipped with all the premium essentials you need for a refreshing stay."
                     amenitiesList={amenitiesList}
                     image={bathroomImg}
                     imageAlt="Luxury Villa Bathroom"

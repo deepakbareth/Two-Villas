@@ -166,14 +166,14 @@ const GalleryPage = ({ imageAssets, bgImage }) => {
     }, [location]);
 
     return (
-        <main id="gallery" className="min-h-screen  pt-24  scroll-mt-16">
+        <main id="gallery" className="min-h-screen py-10 md:py-20 scroll-mt-16">
 
 
 
 
 
             {/* === OPTIMIZED 5-IMAGE PROFESSIONAL COLLAGE GRID === */}
-            <section className="pb-16 md:pb-24  max-w-[1400px] mx-auto px-4 md:px-8">
+            <section className=" max-w-[1400px] mx-auto px-4 md:px-8">
                 <h2 className="text-4xl text-center md:text-6xl font-serif text-[#17818A] pb-10 ">
                     Our Gallery
                 </h2>

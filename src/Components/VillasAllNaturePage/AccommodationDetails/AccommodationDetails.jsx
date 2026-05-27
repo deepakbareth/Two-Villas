@@ -90,7 +90,7 @@ const AccommodationDetails = () => {
                 rooms={villaRoomsData}
             />
             {/* Subtle Divider */}
-            <hr className="border-t border-gray-300/60 my-8" />
+
 
             {/* --- BATHROOMS SECTION --- */}
             {/* <div className='max-w-7xl mx-auto'>

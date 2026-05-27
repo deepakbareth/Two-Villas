@@ -5,7 +5,7 @@ const LocationSection = ({
     mapEmbedUrl
 }) => {
     return (
-        <section id='location' className="py-12 bg-white w-full scroll-mt-16" >
+        <section id='location' className="py-10 md:py-20 bg-white w-full scroll-mt-16" >
             {/* Container to control max width and padding */}
             <div className="max-w-[1600px] mx-auto px-4 md:px-8">
 

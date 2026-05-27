@@ -103,7 +103,7 @@ const Attractions = () => {
     };
 
     return (
-        <div className="w-full mt-15 md:mt-15  mb-15 overflow-hidden font-serif  py-0">
+        <div className="w-full py-10 md:py-10 overflow-hidden font-serif  py-0">
 
             <h2 className="text-4xl md:text-6xl text-center pb-10  text-[#17818A]">
                 Activities
@@ -111,7 +111,7 @@ const Attractions = () => {
 
             {/* Slider Container - Adjusted height back down since images are shorter now */}
             <div
-                className="relative w-full h-[350px] md:h-[500px]"
+                className="relative w-full h-[350px] md:h-[400px]"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
             >

@@ -48,10 +48,10 @@ const PropertiesSection = ({ propertyName = "all" }) => {
   });
 
   return (
-    <section className="py-12 md:py-24 overflow-hidden bg-white/70 backdrop-blur-md">
+    <section className="py-5 md:py-12 overflow-hidden bg-white/70 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-6xl font-serif text-[#17818A]">
             {propertyName == "all" ? " Our Properties" : "Accomodation"}
           </h2>

@@ -196,7 +196,7 @@ const Hero = () => {
     ];
 
     return (
-        <section className="py-25 lg:py-27 relative">
+        <section className="pt-25 lg:pt-27 pb-10 md:pb-20 relative">
             <div className="max-w-8xl  px-4 sm:px-6 lg:px-2 relative z-10">
 
                 {/* Side-by-Side Grid */}

@@ -10,11 +10,11 @@ const FloorPlan2 = ({
     const [activeLightboxImage, setActiveLightboxImage] = useState(null);
 
     return (
-        <section className="py-20 bg-white scroll-mt-16" id="floor-plans">
+        <section className="py-10 md:py-20 bg-white scroll-mt-16" id="floor-plans">
             <div className="max-w-[1350px] mx-auto px-4 md:px-8">
 
                 {/* Section Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-10">
                     <h2 className="text-3xl md:text-6xl font-serif text-[#17818A] mb-4">{title}</h2>
                     {description && (
                         <p className="text-gray-500 text-lg max-w-2xl mx-auto">{description}</p>

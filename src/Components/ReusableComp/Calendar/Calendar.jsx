@@ -36,70 +36,70 @@ const Calendar = () => {
     };
 
     // --- SELECTION LOGIC ---
-   const handleDateClick = (date) => {
+    const handleDateClick = (date) => {
 
-    // CLICKED BOOKED DATE
-    if (getIsUnavailable(date)) {
+        // CLICKED BOOKED DATE
+        if (getIsUnavailable(date)) {
 
-        alert("This date is already booked.");
+            alert("This date is already booked.");
 
-        // RESET EVERYTHING
-        setCheckIn(null);
-        setCheckOut(null);
+            // RESET EVERYTHING
+            setCheckIn(null);
+            setCheckOut(null);
 
-        return;
-    }
+            return;
+        }
 
-    // BOTH ALREADY SELECTED → START NEW SELECTION
-    if (checkIn && checkOut) {
-        setCheckIn(date);
-        setCheckOut(null);
-        return;
-    }
+        // BOTH ALREADY SELECTED → START NEW SELECTION
+        if (checkIn && checkOut) {
+            setCheckIn(date);
+            setCheckOut(null);
+            return;
+        }
 
-    // FIRST DATE
-    if (!checkIn) {
-        setCheckIn(date);
-        return;
-    }
-
-    // SECOND DATE
-    if (checkIn && !checkOut) {
-
-        // IF USER SELECTS SMALLER DATE
-        if (date <= checkIn) {
+        // FIRST DATE
+        if (!checkIn) {
             setCheckIn(date);
             return;
         }
 
-        // CHECK ALL DATES BETWEEN
-        let current = new Date(checkIn);
+        // SECOND DATE
+        if (checkIn && !checkOut) {
 
-        current.setDate(current.getDate() + 1);
-
-        while (current < date) {
-
-            if (getIsUnavailable(current)) {
-
-                alert(
-                    "Selected range contains booked dates."
-                );
-
-                // RESET EVERYTHING
-                setCheckIn(null);
-                setCheckOut(null);
-
+            // IF USER SELECTS SMALLER DATE
+            if (date <= checkIn) {
+                setCheckIn(date);
                 return;
             }
 
-            current.setDate(current.getDate() + 1);
-        }
+            // CHECK ALL DATES BETWEEN
+            let current = new Date(checkIn);
 
-        // SAFE
-        setCheckOut(date);
-        setIsModalOpen(true);
-    }
-};
+            current.setDate(current.getDate() + 1);
+
+            while (current < date) {
+
+                if (getIsUnavailable(current)) {
+
+                    alert(
+                        "Selected range contains booked dates."
+                    );
+
+                    // RESET EVERYTHING
+                    setCheckIn(null);
+                    setCheckOut(null);
+
+                    return;
+                }
+
+                current.setDate(current.getDate() + 1);
+            }
+
+            // SAFE
+            setCheckOut(date);
+            setIsModalOpen(true);
+        }
+    };
 
     const isDateInRange = (date) => {
         if (checkIn && checkOut) {
@@ -192,7 +192,7 @@ const Calendar = () => {
         }
 
         return (
-            <div className="bg-white p-6 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 w-full">
+            <div className="bg-white p-6 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 w-full h-[400px]">
                 <h3 className="text-xl font-serif font-bold text-[#1a2b3c] mb-6 text-center">
                     {monthName} {year}
                 </h3>
@@ -209,7 +209,7 @@ const Calendar = () => {
     };
 
     return (
-        <div className="w-full max-w-[1200px] mx-auto py-12 px-4 scroll-mt-18" id="calendar">
+        <div className="w-full max-w-[1200px] mx-auto py-10 md:py-20 px-4 scroll-mt-18" id="calendar">
 
             <div className="text-center mb-8">
                 <h2 className="text-3xl md:text-6xl font-serif text-[#17818A] mb-4">Availability</h2>
@@ -310,7 +310,7 @@ const Calendar = () => {
                     </div>
                 </div>
             )} */}
-            
+
         </div>
     );
 };

@@ -6,7 +6,7 @@ const AboutSection = () => {
   const [isExpanded2, setIsExpanded2] = useState(false);
 
   return (
-    <section className="md:py-24 py-6 relative overflow-hidden">
+    <section className="md:py-20 py-10 relative overflow-hidden">
       {/* Optional: Subtle background blur blobs for a high-end feel */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#17818A]/10 rounded-full blur-3xl -z-10 mix-blend-multiply"></div>

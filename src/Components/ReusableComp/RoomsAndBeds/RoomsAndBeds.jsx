@@ -18,7 +18,7 @@ const RoomsAndBeds = ({
     };
 
     return (
-        <section className="py-5 md:py-20 bg-white">
+        <section className="py-5 md:pt-12 md:pb-0 bg-white">
             <div className="max-w-[1400px] mx-auto px-0 md:px-8">
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
 
