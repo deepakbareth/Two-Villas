@@ -4,27 +4,30 @@ import logo from '../../assets/home/websiteLogo9.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#111827] pt-10 md:pt-15 pb-8 border-t border-gray-800">
+    <footer className="bg-[#2f3d5e] pt-10 md:pt-10 pb-8 border-t border-gray-800">
       <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Top Grid Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-6">
 
           {/* 1. Logo Column */}
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center pt-8 pl-4"> {/* Added pl-4 so the left-hanging leaves don't get cut off by the screen edge */}
             <Link to='/twovillas/'>
 
-              <div className="flex items-end gap-2 rounded-xl px-2 py-2 bg-[linear-gradient(0.25turn,#f8b46c,#ebf8e1,#71cef6)]">
+              {/* Removed gap-2 so we can control the spacing manually for a tighter box */}
+              <div className="flex items-end rounded-xl pr-4 py-2 bg-[linear-gradient(0.25turn,#f8b46c,#ebf8e1,#71cef6)] relative">
 
                 <img
                   src={logo}
                   alt="Two Villas Logo"
-                  className="h-25 w-auto object-contain"
+                  // Added -ml-8 to push the tree outside the left edge of the box
+                  className="h-[100px] w-auto object-contain -mt-12 -ml-3 relative z-10"
                 />
 
                 <span
                   style={{ fontFamily: "'Copperplate Gothic Bold'" }}
-                  className="text-[#733d29] md:text-[20px] text-[20px] font-bold uppercase tracking-widest md:mb-[-9.5px] md:ml-[-40px] ml-[-40px] mb-[-7px]"
+                  // Adjusted the left margin (ml-[-15px]) to perfectly hug the shifted tree
+                  className="text-[#733d29] md:text-[20px] text-[20px] font-bold uppercase tracking-widest md:mb-[-8.5px] mb-[-7px] ml-[-30px]"
                 >
                   PREMIUM VILLAS
                 </span>
@@ -36,7 +39,7 @@ const Footer = () => {
 
           {/* 2. Quick Links Column */}
           <div className="max-w-md"> {/* Added a max-width to keep the grid tight */}
-            <h3 className="text-2xl font-serif text-[#17818A] relative pb-4 mb-6 inline-block">
+            <h3 className="text-2xl font-serif text-[#00ffff]  relative pb-4 mb-6 inline-block">
               Quick Links
               {/* Yellow Accent Line */}
               <span className="absolute bottom-0 left-0 w-12 h-[2px] bg-yellow-400"></span>
@@ -80,7 +83,7 @@ const Footer = () => {
 
           {/* 3. Contact Us Column */}
           <div>
-            <h3 className="text-2xl font-serif text-[#17818A] relative pb-4 mb-6 inline-block">
+            <h3 className="text-2xl font-serif text-[#00ffff] relative pb-4 mb-6 inline-block">
               Contact Us
               <span className="absolute bottom-0 left-0 w-12 h-[2px] bg-yellow-400"></span>
             </h3>
@@ -99,7 +102,7 @@ const Footer = () => {
 
           {/* 4. Book With Confidence Column */}
           <div>
-            <h3 className="text-2xl font-serif text-[#17818A] relative pb-4 mb-6 inline-block">
+            <h3 className="text-2xl font-serif text-[#00ffff] relative pb-4 mb-6 inline-block">
               Book With Confidence
               <span className="absolute bottom-0 left-0 w-12 h-[2px] bg-yellow-400"></span>
             </h3>
@@ -120,12 +123,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Copyright Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-light">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-300 font-light">
           <p>
             &copy; {new Date().getFullYear()} Premium Villas. All Rights Reserved.
           </p>
           <p className="tracking-wide">
-            Powered By | <a href="https://premiumbusinesswebsites.com/" target='_blank' className='text-blue-500'>premiumbusinesswebsites</a>
+            Powered By | <a href="https://premiumbusinesswebsites.com/" target='_blank' className='text-blue-400'>premiumbusinesswebsites</a>
           </p>
         </div>
 

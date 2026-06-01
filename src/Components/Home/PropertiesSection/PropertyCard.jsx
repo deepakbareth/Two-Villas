@@ -49,9 +49,7 @@ const PropertyCard = ({ property, index }) => {
 
         {/* 4. Description Paragraph */}
         <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-md">
-          Spectacular villa in a natural setting, just minutes away from local attractions.
-          Very bright and peaceful with a spacious outdoor area, ideal for families and groups
-          looking for an exclusive retreat.
+          {property.description}
         </p>
 
         {/* 5. Dual Action Buttons */}

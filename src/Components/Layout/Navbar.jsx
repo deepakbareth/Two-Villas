@@ -96,7 +96,7 @@ const Navbar = () => {
                   <NavLink
                     key={item.name}
                     to={item.path}
-                    className={`ml-4 bg-yellow-400 text-black px-8 py-[16.9px] rounded-full text-[18px] shadow-lg hover:bg-yellow-500 transition-all duration-300 transform font-bold rounded-full ${scrolled ? 'md:mr-[5px]' : 'md:mr-[0px]'}`}
+                    className={`ml-4 bg-yellow-400 text-black px-8 py-[16.9px] rounded-full text-[18px] shadow-lg hover:bg-yellow-500 transition-all duration-300 transform  rounded-full ${scrolled ? 'md:mr-[5px]' : 'md:mr-[0px]'}`}
                   >
                     {item.name}
                   </NavLink>

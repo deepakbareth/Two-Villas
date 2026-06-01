@@ -6,7 +6,7 @@ import BathroomAmenities from "../Components/ReusableComp/BathroomAmenities/Bath
 import Calendar from "../Components/ReusableComp/Calendar/Calendar";
 import OurServices from "../Components/ReusableComp/OurServices/OurServices";
 import { Droplets, Wind, Toilet, ShowerHead, Check } from 'lucide-react';
-import bathroomImg from "../assets/Blue-diamond-villa-img/66-Bbaño 4 cor.jpg";
+import bathroomImg from "../assets/home/blue-bath.jpg";
 import VillaSpaces2 from "../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces2";
 import villasSpaceImgBlueDiamond from "../Data/villasSpaceImgBlueDiamond";
 import LocationSection from "../Components/ReusableComp/LocationSection/LocationSection";

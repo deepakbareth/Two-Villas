@@ -27,11 +27,11 @@ const googleMapsLink = "https://maps.google.com/maps?q=39.4124602,-0.6152275&hl=
 
 
 const amenitiesList = [
-    { label: "Premium Soap", Icon: Sparkles },
+    { label: "Hand Soap", Icon: Sparkles },
     { label: "Towels Provided", Icon: Check },
-    { label: "Bathtub or Shower", Icon: Bath },
     { label: "Modern Toilet", Icon: Toilet },
-    { label: "Luxury Shampoo", Icon: Droplets },
+    { label: "Rains Effect Shower", Icon: Bath },
+    { label: "Shower Gel", Icon: Droplets },
     { label: "Hair Dryer", Icon: Wind },
 ];
 
@@ -51,7 +51,7 @@ function AllNature() {
                     id="bathrooms"
 
                     title="5 Bathrooms"
-                    description="Start and end your day in absolute comfort. Our meticulously designed bathrooms offer a serene, atmosphere equipped with all the premium essentials you need for a refreshing stay."
+                    description="Start and end your day in absolute comfort. Our meticulously designed bathrooms offer a serene, atmosphere equipped with all the essentials you need for a refreshing stay."
                     amenitiesList={amenitiesList}
                     image={bathroomImg}
                     imageAlt="Luxury Villa Bathroom"

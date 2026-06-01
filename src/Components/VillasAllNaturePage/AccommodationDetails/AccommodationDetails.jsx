@@ -23,35 +23,36 @@ const AccommodationDetails = () => {
         {
             name: "Bedroom 1",
             beds: [
-                { count: 2, type: "Single Beds", isExtra: false }
+                { count: 2, type: "Single Beds", isExtra: false },
+                { count: 1, type: "Extra Single Bed", isExtra: true }
             ]
         },
         {
             name: "Bedroom 2",
             beds: [
                 { count: 3, type: "Single Beds", isExtra: false },
-                { count: 1, type: "Extra Single Bed", isExtra: true }
+                { count: 2, type: "Extra Single Bed", isExtra: true }
             ]
         },
         {
             name: "Bedroom 3",
             beds: [
                 { count: 2, type: "Single Beds", isExtra: false },
-                { count: 1, type: "Bunk Bed", isExtra: false }
+                { count: 2, type: "Bunk Bed", isExtra: false }
             ]
         },
         {
             name: "Bedroom 4",
             beds: [
                 { count: 1, type: "King Size Bed", isExtra: false },
-                { count: 1, type: "Extra Single Bed", isExtra: true }
+                { count: 2, type: "Extra Single Bed", isExtra: true }
             ]
         },
         {
             name: "Bedroom 5",
             beds: [
                 { count: 1, type: "King Size Bed", isExtra: false },
-                { count: 2, type: "Extra Single Beds", isExtra: true }
+                { count: 3, type: "Extra Single Beds", isExtra: true }
             ]
         }
     ];
