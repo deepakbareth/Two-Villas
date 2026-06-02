@@ -23,37 +23,42 @@ const AccommodationDetails = () => {
         {
             name: "Bedroom 1",
             beds: [
-                { count: 3, type: "Twin Beds", isExtra: false }
+                { count: 3, type: "Single Beds", isExtra: false },
+                { count: 1, type: "Extra Single Bed", isExtra: true }
             ]
         },
         {
             name: "Bedroom 2",
             beds: [
-                { count: 3, type: "Twin Beds", isExtra: false }
+                { count: 3, type: "Single Beds", isExtra: false },
+                { count: 1, type: "Extra Single Bed", isExtra: true }
             ]
         },
         {
             name: "Bedroom 3",
             beds: [
-                { count: 3, type: "Twin Beds", isExtra: false }
+                { count: 3, type: "Single Beds", isExtra: false },
+                { count: 1, type: "Extra Single Bed", isExtra: true }
             ]
         },
         {
             name: "Bedroom 4",
             beds: [
-                { count: 4, type: "Twin Beds", isExtra: false }
+                { count: 4, type: "Single Beds", isExtra: false },
+                { count: 1, type: "Extra Single Bed", isExtra: true }
             ]
         },
         {
             name: "Living Room 1",
             beds: [
-                { count: 3, type: "Twin Sofa Beds", isExtra: false }
+                { count: 2, type: "Single Beds", isExtra: false }
             ]
         },
         {
             name: "Living Room 2",
             beds: [
-                { count: 2, type: "Twin Beds", isExtra: false }
+                { count: 3, type: "Sofa Beds", isExtra: false }
+     
             ]
         }
     ];
@@ -85,7 +90,12 @@ const AccommodationDetails = () => {
             <PropertiesSection propertyName='Blue Diamond Villa' />
 
             {/* <Amenities /> */}
-            <RoomsAndBeds imageSrc={blueDiamond} title='4 Bedrooms' subtitle='sleeps 21' rooms={villaRoomsData} />
+            <RoomsAndBeds imageSrc={blueDiamond}  
+              imageAlt = "Luxury Bedroom"
+    title = "4 Bedrooms"
+    subtitle = "Standard sleep 13, Max. capacity 22 with"
+    extraBeds = "8 Extra beds"
+     rooms={villaRoomsData} />
 
             {/* Subtle Divider */}
             <hr className="border-t border-gray-300/60 my-12" />

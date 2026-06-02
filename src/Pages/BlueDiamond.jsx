@@ -5,7 +5,7 @@ import VillaSpaces from "../Components/BlueDiamond/VillaSpaces/VillaSpaces";
 import BathroomAmenities from "../Components/ReusableComp/BathroomAmenities/BathroomAmenities";
 import Calendar from "../Components/ReusableComp/Calendar/Calendar";
 import OurServices from "../Components/ReusableComp/OurServices/OurServices";
-import { Droplets, Wind, Toilet, ShowerHead, Check } from 'lucide-react';
+import { Droplets, Wind, Toilet, ShowerHead, Check, Sparkles, Bath } from 'lucide-react';
 import bathroomImg from "../assets/home/blue-bath.jpg";
 import VillaSpaces2 from "../Components/VillasAllNaturePage/VillaSpaces/VillaSpaces2";
 import villasSpaceImgBlueDiamond from "../Data/villasSpaceImgBlueDiamond";
@@ -21,12 +21,12 @@ const googleMapsLink =
     "https://maps.google.com/maps?q=39.392498,-0.6108777&hl=en&z=18&t=h&output=embed";
 
 const amenitiesList = [
-    { label: "Soap", Icon: Droplets },
-    { label: "Towels provided", Icon: Check },
-    { label: "Toilet & Bidet", Icon: Toilet },
-    // { label: "Toilet", Icon: Toilet },
-    { label: "Shower only", Icon: ShowerHead },
-    { label: "Hair dryer", Icon: Wind },
+    { label: "Hand Soap", Icon: Sparkles },
+    { label: "Towels Provided", Icon: Check },
+    { label: "Modern Toilet & Bidet", Icon: Toilet },
+    { label: "Rains Effect Shower", Icon: Bath },
+    { label: "Shower Gel", Icon: Droplets },
+    { label: "Hair Dryer", Icon: Wind },
 ];
 
 
@@ -38,7 +38,7 @@ function BlueDiamond() {
             <BathroomAmenities
                 id="bathrooms"
                 title="4 Bathrooms"
-                description="Each of our 4 bathrooms is fully equipped with premium soap, fresh towels, Toilet & Bidet, walk-in shower, and a hair dryer for your complete convenience."
+                description="Start and end your day in absolute comfort. Our meticulously designed bathrooms offer a serene, atmosphere equipped with all the essentials you need for a refreshing stay."
                 amenitiesList={amenitiesList}
                 image={bathroomImg}
                 imageAlt="Luxury Villa Bathroom"

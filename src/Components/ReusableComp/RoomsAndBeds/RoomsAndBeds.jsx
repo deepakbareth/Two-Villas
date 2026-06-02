@@ -5,7 +5,7 @@ const RoomsAndBeds = ({
     imageSrc,
     imageAlt = "Luxury Bedroom",
     title = "5 Bedrooms",
-    subtitle = "Standard sleep 13, Max. capacity 22,",
+    subtitle = "Standard sleep 13, Max. capacity 22 with",
     extraBeds = "8 Extra beds",
     rooms = []
 }) => {
