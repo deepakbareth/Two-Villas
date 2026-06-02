@@ -5,7 +5,8 @@ const RoomsAndBeds = ({
     imageSrc,
     imageAlt = "Luxury Bedroom",
     title = "5 Bedrooms",
-    subtitle = "Standard sleep 13, Max. capacity 22",
+    subtitle = "Standard sleep 13, Max. capacity 22,",
+    extraBeds = "8 Extra beds",
     rooms = []
 }) => {
 
@@ -44,7 +45,11 @@ const RoomsAndBeds = ({
 
                                 {title}
                             </h2>
-                            {subtitle && <p className="text-xl text-slate-600 font-medium">{subtitle}</p>}
+                            <div className='flex items-center gap-2'>
+                                {subtitle && <p className="text-xl text-slate-600 font-medium">{subtitle}</p>}
+                                {extraBeds && <span className="text-xl text-[#ef4444] font-medium flex items-center gap-1"> {extraBeds}</span>}
+                            </div>
+
                         </div>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-6">

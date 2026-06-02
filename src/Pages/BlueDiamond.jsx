@@ -23,8 +23,8 @@ const googleMapsLink =
 const amenitiesList = [
     { label: "Soap", Icon: Droplets },
     { label: "Towels provided", Icon: Check },
-    { label: "Bidet", Icon: Toilet },
-    { label: "Toilet", Icon: Toilet },
+    { label: "Toilet & Bidet", Icon: Toilet },
+    // { label: "Toilet", Icon: Toilet },
     { label: "Shower only", Icon: ShowerHead },
     { label: "Hair dryer", Icon: Wind },
 ];
@@ -38,7 +38,7 @@ function BlueDiamond() {
             <BathroomAmenities
                 id="bathrooms"
                 title="4 Bathrooms"
-                description="Each of our 4 bathrooms is fully equipped with premium soap, fresh towels, a bidet, modern toilet, walk-in shower, and a hair dryer for your complete convenience."
+                description="Each of our 4 bathrooms is fully equipped with premium soap, fresh towels, Toilet & Bidet, walk-in shower, and a hair dryer for your complete convenience."
                 amenitiesList={amenitiesList}
                 image={bathroomImg}
                 imageAlt="Luxury Villa Bathroom"
