@@ -7,6 +7,7 @@ import img4 from '../assets/Blue-diamond-villa-img/74-Futbolin cor.jpg';
 import img5 from '../assets/Blue-diamond-villa-img/75-Mesa Pinspong + chillout cor.jpg';
 import img6 from '../assets/Blue-diamond-villa-img/18-Comedor y bbq terraza cor.jpg';
 import img7 from '../assets/Blue-diamond-villa-img/25-Cama chillout 2 cor.jpg';
+import img8 from '../assets/Blue-diamond-villa-img/30-Cocina cor.jpg';
 
 
 const villasSpaceImg = [
@@ -38,13 +39,13 @@ const villasSpaceImg = [
         id: 5,
         src: img5,
         alt: "Ping Pong table",
-        title: "Ping Pong table"
+        title: "Ping Pong Table"
     },
     {
         id: 6,
         src: img6,
-        alt: "Outdoor dining",
-        title: "Outdoor dining"
+        alt: "Outdoor Dining",
+        title: "Outdoor Dining"
     },
     {
         id: 7,
@@ -52,6 +53,12 @@ const villasSpaceImg = [
         alt: "Outdoor large lounge",
         title: "Outdoor large lounge"
     },
+    {
+        id: 8,
+        src: img8,
+        alt: "Getaround Kitchen Area",
+        title: "Getaround Kitchen Area"
+    }
 ];
 
 export default villasSpaceImg;

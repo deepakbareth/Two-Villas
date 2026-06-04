@@ -58,7 +58,7 @@ const AccommodationDetails = () => {
             name: "Living Room 2",
             beds: [
                 { count: 3, type: "Sofa Beds", isExtra: false }
-     
+
             ]
         }
     ];
@@ -90,12 +90,12 @@ const AccommodationDetails = () => {
             <PropertiesSection propertyName='Blue Diamond Villa' />
 
             {/* <Amenities /> */}
-            <RoomsAndBeds imageSrc={blueDiamond}  
-              imageAlt = "Luxury Bedroom"
-    title = "4 Bedrooms"
-    subtitle = "Standard sleep 13, Max. capacity 22 with"
-    extraBeds = "8 Extra beds"
-     rooms={villaRoomsData} />
+            <RoomsAndBeds imageSrc={blueDiamond}
+                imageAlt="Luxury Bedroom"
+                title="4 Bedrooms"
+                subtitle="Standard sleep 13, Max. capacity 22 with"
+                extraBeds="9 Extra beds"
+                rooms={villaRoomsData} />
 
             {/* Subtle Divider */}
             <hr className="border-t border-gray-300/60 my-12" />

@@ -55,26 +55,34 @@ const RoomsAndBeds = ({
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-6">
                             {rooms.map((room, index) => (
                                 <div key={index} className="flex flex-col">
-                                    <h3 className="text-xl font-serif text-[#0a2342] mb-4">{room.name}</h3>
+                                    {/* Reduced bottom margin on heading to save even more space */}
+                                    <h3 className="text-[1.15rem] font-serif text-[#0a2342] mb-1.5">{room.name}</h3>
 
-                                    <div className="space-y-2">
+                                    {/* Changed to flex-wrap so beds sit side-by-side on the same line */}
+                                    <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
                                         {room.beds.map((bed, bedIndex) => {
                                             const IconComponent = getBedIcon(bed.type);
                                             const iconColor = bed.isExtra ? "#ef4444" : "#17818A";
 
                                             return (
-                                                <div key={bedIndex} className="flex gap-1">
-                                                    <div className="flex items-center gap-2">
+                                                <div key={bedIndex} className="flex items-center gap-1.5">
+
+                                                    {/* Bed Icons */}
+                                                    <div className="flex items-center gap-0.5">
                                                         {Array.from({ length: bed.count }).map((_, i) => (
-                                                            <IconComponent key={i} className="w-6 h-6" style={{ color: iconColor }} />
+                                                            <IconComponent
+                                                                key={i}
+                                                                className="w-6 h-6"
+                                                                style={{ color: iconColor }}
+                                                            />
                                                         ))}
                                                     </div>
-                                                    <div className="flex items-center gap-2">
-                                                        <span className={bed.isExtra ? "text-red-500 font-medium" : "text-gray-600"}>
-                                                            {bed.count} {bed.type}
-                                                        </span>
 
-                                                    </div>
+                                                    {/* Just the count number (Removed text as requested) */}
+                                                    <span className={bed.isExtra ? "text-red-500 font-bold" : "text-gray-600 font-bold"}>
+                                                        {bed.count}
+                                                    </span>
+
                                                 </div>
                                             );
                                         })}

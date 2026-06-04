@@ -13,13 +13,13 @@ const blue_diamond_floorData = [
         id: 1,
         title: "Ground Floor Plan",
         description:
-            "Detailed layout of the main living areas, kitchen, and outdoor spaces.",
-        fileUrl: pdf1,
-        bgImage: bg1,
+            "Complete property overview including the pool, gardens, and property boundaries.",
+        fileUrl: pdf3,
+        bgImage: bg3,
     },
     {
         id: 2,
-        title: "Semi-Basement Plan",
+        title: "Infinity Pool Plan",
         description:
             "Explore the lower level layout, including additional rooms and amenities.",
         fileUrl: pdf2,
@@ -27,11 +27,11 @@ const blue_diamond_floorData = [
     },
     {
         id: 3,
-        title: "Master Plot Plan",
+        title: "Garden Plot Plan",
         description:
-            "Complete property overview including the pool, gardens, and property boundaries.",
-        fileUrl: pdf3,
-        bgImage: bg3,
+            "Detailed layout of the main living areas, kitchen, and outdoor spaces.",
+        fileUrl: pdf1,
+        bgImage: bg1,
     },
 ];
 

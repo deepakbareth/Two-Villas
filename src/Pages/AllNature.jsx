@@ -29,7 +29,7 @@ const googleMapsLink = "https://maps.google.com/maps?q=39.4124602,-0.6152275&hl=
 const amenitiesList = [
     { label: "Hand Soap", Icon: Sparkles },
     { label: "Towels Provided", Icon: Check },
-    { label: "Toilet & Bidet", Icon: Toilet },
+    { label: "Toilet - Bidet", Icon: Toilet },
     { label: "Rains Effect Shower", Icon: Bath },
     { label: "Shower Gel", Icon: Droplets },
     { label: "Hair Dryer", Icon: Wind },

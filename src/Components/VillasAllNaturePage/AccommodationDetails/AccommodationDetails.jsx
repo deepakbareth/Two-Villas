@@ -37,7 +37,7 @@ const AccommodationDetails = () => {
             name: "Bedroom 3",
             beds: [
                 { count: 2, type: "Single Beds", isExtra: false },
-                { count: 1, type: "Bunk Bed", isExtra: false }
+                { count: 1, type: "Bunk Bed", isExtra: true }
             ]
         },
         {
@@ -64,7 +64,7 @@ const AccommodationDetails = () => {
             name: "Living Room 2",
             beds: [
                 { count: 3, type: "Sofa Beds", isExtra: false }
-     
+
             ]
         }
     ];

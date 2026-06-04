@@ -23,7 +23,7 @@ const PropertiesSection = ({ propertyName = "all" }) => {
       title: "Blue Diamond Villa",
       link: "/twovillas/#villas/blue-diamond",
       bookingLink: "/twovillas/#villas/blue-diamond/#calendar",
-      specs: { bedrooms: 4, bathrooms: 4, sleeps: 21, sqft: "3552.1" },
+      specs: { bedrooms: 4, bathrooms: 4, sleeps: 22, sqft: "3552.1" },
       amenities: ['Pool', 'Kitchen', 'Pet friendly', 'Hot tub', 'Washer', 'Air conditioning'],
       description: "Spectacular villa in a natural setting, ideal for families and groups looking for an exclusive retreat. Very bright and peaceful with a spacious outdoor area, ideal for families and groups looking for an exclusive retreat."
     },

@@ -1,6 +1,6 @@
 // src/data/villasSpaceImg.js
 
-import img1 from '../assets/all-nature-villa-space/20-DSC01152-1-cor.jpg';
+import img1 from '../assets/all-nature-villa-space/13-elegida1_084702.jpg';
 import img2 from '../assets/all-nature-villa-space/5-cor en win 2_080403.jpg';
 import img3 from '../assets/all-nature-villa-space/7-pingpong-cor.jpg';
 import img4 from '../assets/all-nature-villa-space/11-ELEGIDA COR 2_200104.jpg';
@@ -14,8 +14,8 @@ const villasSpaceImg = [
     {
         id: 1,
         src: img1,
-        alt: "Bathroom",
-        title: "Bathroom"
+        alt: " Outdoor Dining Area",
+        title: " Outdoor Dining Area"
     },
     {
         id: 2,

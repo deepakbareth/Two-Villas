@@ -23,7 +23,7 @@ const googleMapsLink =
 const amenitiesList = [
     { label: "Hand Soap", Icon: Sparkles },
     { label: "Towels Provided", Icon: Check },
-    { label: "Modern Toilet & Bidet", Icon: Toilet },
+    { label: "Modern Toilet - Bidet", Icon: Toilet },
     { label: "Rains Effect Shower", Icon: Bath },
     { label: "Shower Gel", Icon: Droplets },
     { label: "Hair Dryer", Icon: Wind },

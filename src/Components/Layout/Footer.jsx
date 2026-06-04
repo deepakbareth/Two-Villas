@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-6">
 
           {/* 1. Logo Column */}
-          <div className="flex flex-col items-center justify-center pt-8 pl-4"> {/* Added pl-4 so the left-hanging leaves don't get cut off by the screen edge */}
+          <div className="flex flex-col items-center justify-center md:pt-15 pt-4 pl-4"> {/* Added pl-4 so the left-hanging leaves don't get cut off by the screen edge */}
             <Link to='/twovillas/'>
 
               {/* Removed gap-2 so we can control the spacing manually for a tighter box */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Bath } from "lucide-react";
 
 // Simplified icons to match the thin-stroke style in the screenshot
 const Icon = ({ name }) => {
@@ -34,15 +35,15 @@ const PropertyCard = ({ property, index }) => {
         <div className="flex flex-wrap items-center gap-6 mb-8 text-[#0c2d35]/80">
           <div className="flex items-center gap-2">
             <Icon name="Sleeps" /> <span className="text-lg">{property.specs.sleeps}</span>
-            sleeps
+            Sleeps
           </div>
           <div className="flex items-center gap-2">
             <Icon name="Bedrooms" /> <span className="text-lg">{property.specs.bedrooms}</span>
-            bedrooms
+            Bedrooms
           </div>
           <div className="flex items-center gap-2">
-            <Icon name="Bathrooms" /> <span className="text-lg">{property.specs.bathrooms}</span>
-            bathrooms
+            <Bath size={18} /><span className="text-lg">{property.specs.bathrooms}</span>
+            Bathrooms
           </div>
 
         </div>

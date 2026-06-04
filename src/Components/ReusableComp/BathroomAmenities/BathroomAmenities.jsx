@@ -15,12 +15,12 @@ const BathroomAmenities = ({
 }) => {
     return (
         <section className="py-5 md:py-12 bg-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-0 lg:px-0">
+            <div className="max-w-[1400px] mx-auto px-4 md:px-8">
 
                 <div className="flex flex-col lg:flex-row  items-start lg:justify-between gap-12 lg:gap-20">
 
                     {/* LEFT SIDE */}
-                    <div className="w-full lg:w-1/3 flex flex-col justify-center">
+                    <div className="w-full lg:w-1/2 flex flex-col justify-center">
 
                         {/* HEADING */}
                         <div className="mb-10">
@@ -75,7 +75,7 @@ const BathroomAmenities = ({
                     </div>
 
                     {/* RIGHT SIDE IMAGE */}
-                    {/* LEFT SIDE: Image */}
+
                     <div className="w-full lg:w-[53%]">
                         <div className="relative rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
                             <img
