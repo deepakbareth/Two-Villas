@@ -40,7 +40,7 @@ const BathroomAmenities = ({
                         </div>
 
                         {/* AMENITIES */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 md:gap-y-12 gap-x-8">
+                        <div className={`grid grid-cols-1 sm:grid-cols-2 gap-y-6 ${title == "4 Bathrooms" ? "md:gap-y-7.5" : "md:gap-y-12"}  gap-x-8`}>
                             {amenitiesList.map((item, index) => {
                                 const IconComponent = item.Icon;
 
@@ -76,7 +76,7 @@ const BathroomAmenities = ({
 
                     {/* RIGHT SIDE IMAGE */}
 
-                    <div className="w-full lg:w-[53%]">
+                    <div className={`w-full lg:w-[53%] ${title == "4 Bathrooms" ? "mt-8" : "mt-0"}`}>
                         <div className="relative rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] group">
                             <img
                                 src={image}

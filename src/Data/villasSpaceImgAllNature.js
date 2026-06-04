@@ -8,6 +8,7 @@ import img5 from '../assets/all-nature-villa-space/12-elegida cor_201019  (2).jp
 import img6 from '../assets/all-nature-villa-space/7-IMG_20200829_154232---COR.jpg';
 import img7 from '../assets/all-nature-villa-space/10-IMG_20160413_190911 (1).jpg';
 import img8 from '../assets/all-nature-villa-space/17-elegida cor_080830 (2).jpg';
+import img9 from '../assets/all-nature-villa-space/jacuzzi.jpg';
 
 
 const villasSpaceImg = [
@@ -17,12 +18,12 @@ const villasSpaceImg = [
         alt: " Outdoor Dining Area",
         title: " Outdoor Dining Area"
     },
-    {
-        id: 2,
-        src: img2,
-        alt: "Hot Spa",
-        title: "Hot Spa"
-    },
+    // {
+    //     id: 2,
+    //     src: img2,
+    //     alt: "Hot Spa",
+    //     title: "Hot Spa"
+    // },
     {
         id: 3,
         src: img3,
@@ -59,6 +60,12 @@ const villasSpaceImg = [
         alt: "Kitchen",
         title: "Kitchen"
     },
+    {
+        id: 9,
+        src: img9,
+        alt: "Jacuzzi",
+        title: "Jacuzzi"
+    }
 ];
 
 export default villasSpaceImg;

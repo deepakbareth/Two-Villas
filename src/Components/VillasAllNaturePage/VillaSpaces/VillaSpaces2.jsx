@@ -203,7 +203,7 @@ const VillaSpaces2 = ({ images = [] }) => {
                     {/* RIGHT BUTTON */}
                     <button
                         onClick={() => scroll('right')}
-                        className="absolute cursor-pointer right-2 top-1/2 -translate-y-1/2 z-20 bg-white/90 rounded-full p-2 shadow-md transition-all duration-300 hidden md:block opacity-0 group-hover:opacity-100"
+                        className="absolute cursor-pointer right-4 top-1/2 -translate-y-1/2 z-20 bg-white/90 rounded-full p-2 shadow-md transition-all duration-300 hidden md:block opacity-0 group-hover:opacity-100"
                     >
                         <ChevronRight className="w-7 h-7 text-[#17818A]" />
                     </button>
@@ -236,11 +236,11 @@ const VillaSpaces2 = ({ images = [] }) => {
                                         decoding="async"
                                     />
 
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-black/0 to-transparent" />
 
                                     {img.title && (
                                         <div className="absolute bottom-0 left-0 w-full p-4 md:p-5">
-                                            <h3 className="text-white text-xl md:text-2xl text-center font-semibold tracking-wide">
+                                            <h3 className="text-white text-xl md:text-2xl text-center font-semibold tracking-wide [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]">
                                                 {img.title}
                                             </h3>
                                         </div>

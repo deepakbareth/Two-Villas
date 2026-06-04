@@ -19,19 +19,19 @@ const blue_diamond_floorData = [
     },
     {
         id: 2,
-        title: "Infinity Pool Plan",
-        description:
-            "Explore the lower level layout, including additional rooms and amenities.",
-        fileUrl: pdf2,
-        bgImage: bg2,
-    },
-    {
-        id: 3,
         title: "Garden Plot Plan",
         description:
             "Detailed layout of the main living areas, kitchen, and outdoor spaces.",
         fileUrl: pdf1,
         bgImage: bg1,
+    },
+    {
+        id: 3,
+        title: "Infinity Pool Plan",
+        description:
+            "Explore the lower level layout, including additional rooms and amenities.",
+        fileUrl: pdf2,
+        bgImage: bg2,
     },
 ];
 
