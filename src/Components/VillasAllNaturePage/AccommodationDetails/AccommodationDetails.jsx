@@ -3,8 +3,9 @@ import { Bed, BedDouble, Sofa, Bath, ShowerHead } from 'lucide-react';
 import Amenities from '../Amenities/Amenities';
 import { useLocation } from 'react-router-dom';
 import PropertiesSection from '../../Home/PropertiesSection/PropertiesSection';
-import RoomsAndBeds from '../../ReusableComp/RoomsAndBeds/RoomsAndBeds';
+// import RoomsAndBeds from '../../ReusableComp/RoomsAndBeds/RoomsAndBeds';
 import bedroomImg from '../../../assets/home/bedroom.png';
+import RoomsAndBeds2 from '../../ReusableComp/RoomsAndBeds/RoomsAndBeds2';
 
 
 // --- Helper Component to render multiple icons side-by-side ---
@@ -96,13 +97,18 @@ const AccommodationDetails = () => {
         <section id='accommodation' className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 md:py-16 py-6 text-[#1a2b3c] bg-white">
             <PropertiesSection propertyName='All Nature Villa' />
 
-            {/* <Amenities /> */}
-            {/* --- ROOMS & BEDS SECTION --- */}
-            <RoomsAndBeds
+
+
+
+            {/* <RoomsAndBeds
                 imageSrc={bedroomImg}
                 rooms={villaRoomsData}
-            />
-            {/* Subtle Divider */}
+            /> */}
+
+
+            <RoomsAndBeds2 />
+
+
 
 
             {/* --- BATHROOMS SECTION --- */}

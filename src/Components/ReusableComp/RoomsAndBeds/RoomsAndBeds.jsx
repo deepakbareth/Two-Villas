@@ -68,7 +68,7 @@ const RoomsAndBeds = ({
                                                 <div key={bedIndex} className="flex items-center gap-1.5">
 
                                                     {/* Bed Icons */}
-                                                    <div className="flex items-center gap-0.5">
+                                                    <div className="flex items-center gap-2">
                                                         {Array.from({ length: bed.count }).map((_, i) => (
                                                             <IconComponent
                                                                 key={i}
