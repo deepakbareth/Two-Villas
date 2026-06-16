@@ -32,6 +32,7 @@ const Navbar = () => {
     },
     {
       name: 'Services',
+      path: '/twovillas/services',
     },
     {
       name: 'Availability',

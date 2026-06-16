@@ -12,6 +12,7 @@ import PageSkeleton from "./Components/Layout/PageSkeleton"; // Import the new s
 const Home = lazy(() => import("./Pages/Home"));
 const AllNature = lazy(() => import("./Pages/AllNature"));
 const BlueDiamond = lazy(() => import("./Pages/BlueDiamond"));
+const Services = lazy(() => import("./Pages/Services"));
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/twovillas/" element={<Home />} />
             <Route path="/twovillas/villas/all-nature" element={<AllNature />} />
             <Route path="/twovillas/villas/blue-diamond" element={<BlueDiamond />} />
+            <Route path="/twovillas/services" element={<Services />} />
           </Routes>
         </Suspense>
       </main>
