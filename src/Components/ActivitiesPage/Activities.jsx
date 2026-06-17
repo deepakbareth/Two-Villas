@@ -241,11 +241,14 @@ const Activities = () => {
                 <span className="text-[#c4a661] uppercase tracking-[0.3em] text-sm font-semibold mb-3 block">
                     Discover Valencia
                 </span>
-                <h2 className="text-4xl md:text-6xl font-serif text-[#17818A] tracking-tight">
+               <h1 className="text-4xl md:text-6xl font-serif text-[#17818A] tracking-tight">
                     Activities
+                </h1>
+                 <h2 className="text-xl md:text-2xl mt-4 font-serif text-[#17818A] tracking-tight">
+                Explore the best attractions Valencia has to offer
                 </h2>
-                <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed mt-4 font-light">
-                    Explore the best attractions Valencia has to offer. Simply click on any activity card to view details, descriptions, and a photo gallery.
+                <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed mt-4 font-light">
+                Simply click on any activity card to view details, descriptions, and a photo gallery.
                 </p>
             </div>
 
@@ -255,7 +258,7 @@ const Activities = () => {
                 {/* LEFT SIDE: Grid of 9 Activity Cards */}
                 <div
                     onMouseLeave={() => setHoveredActivityId(null)}
-                    className="w-full lg:w-[55%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+                    className="w-full lg:w-[55%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6"
                 >
                     {activities.map((activity) => {
                         const IconComponent = activity.icon;
@@ -301,8 +304,8 @@ const Activities = () => {
 
                                     {/* Title & Underline */}
                                     <div>
-                                        <h3 className="text-white text-xl md:text-2xl text-center font-semibold tracking-wide [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]">
-                                            {activity.title}
+                                       <h3 className="text-white text-xl md:text-2xl text-center font-semibold tracking-wide [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]">
+                                           {activity.title}
                                         </h3>
                                         <div className={`h-[2px] bg-[#c4a661] transition-all duration-500 mt-2 ${isActive ? 'w-12' : 'w-0 group-hover:w-12'
                                             }`}></div>

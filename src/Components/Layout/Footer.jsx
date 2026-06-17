@@ -27,7 +27,7 @@ const Footer = () => {
                 <span
                   style={{ fontFamily: "'Copperplate Gothic Bold'" }}
                   // Adjusted the left margin (ml-[-15px]) to perfectly hug the shifted tree
-                  className="text-[#733d29] md:text-[20px] text-[20px] font-bold uppercase tracking-widest md:mb-[-8.5px] mb-[-7px] ml-[-30px]"
+                  className="text-[#733d29] lg:text-[16px] md:text-[20px] text-[20px] font-bold uppercase tracking-widest lg:mb-[-6px] md:mb-[-8.5px] mb-[-7px] ml-[-30px]"
                 >
                   PREMIUM VILLAS
                 </span>
@@ -58,7 +58,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/twovillas/#services" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
+                <Link to="/twovillas/services" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
                   Services
                 </Link>
               </li>
@@ -73,7 +73,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/twovillas/#activities" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
+                <Link to="/twovillas/activities" className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 font-light">
                   Activities
                 </Link>
               </li>

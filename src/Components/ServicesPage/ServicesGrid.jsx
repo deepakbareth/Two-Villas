@@ -150,8 +150,12 @@ const ServicesGrid = () => {
                 <h1 className="text-4xl md:text-6xl font-serif text-[#17818A] tracking-tight">
                     Services We Provide
                 </h1>
-                <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed mt-4 font-light">
-                    Elevate your stay at the villas. Simply click on any service card to view details, descriptions, and a photo gallery.
+                <h2 className="text-xl md:text-2xl mt-4 font-serif text-[#17818A] tracking-tight">
+                   Elevate your stay at the villas
+                </h2>
+                
+                <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed mt-4 font-light">
+                    Simply click on any service card to view details, descriptions, and a photo gallery.
                 </p>
             </div>
 
