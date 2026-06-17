@@ -1,14 +1,15 @@
 import React from 'react';
-import ServicesGrid from '../Components/ServicesPage/ServicesGrid';
 import Activities from '../Components/ActivitiesPage/Activities';
 
-function Services() {
+
+function Activity() {
     return (
         <div className="pt-28 md:pt-36 bg-white">
-            <ServicesGrid />
+            <Activities />
+
 
         </div>
     );
 }
 
-export default Services;
+export default Activity;

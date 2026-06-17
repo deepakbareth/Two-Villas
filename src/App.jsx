@@ -13,7 +13,7 @@ const Home = lazy(() => import("./Pages/Home"));
 const AllNature = lazy(() => import("./Pages/AllNature"));
 const BlueDiamond = lazy(() => import("./Pages/BlueDiamond"));
 const Services = lazy(() => import("./Pages/Services"));
-
+const Activity = lazy(() => import("./Pages/Activities"));
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -28,6 +28,7 @@ function App() {
             <Route path="/twovillas/villas/all-nature" element={<AllNature />} />
             <Route path="/twovillas/villas/blue-diamond" element={<BlueDiamond />} />
             <Route path="/twovillas/services" element={<Services />} />
+            <Route path="/twovillas/activities" element={<Activity />} />
           </Routes>
         </Suspense>
       </main>

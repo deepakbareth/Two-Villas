@@ -234,10 +234,10 @@ const Activities = () => {
     const activeActivity = activities.find(a => a.id === activeActivityId) || activities[0];
 
     return (
-        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 py-10 mt-10 border-t border-gray-100">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 py-10">
 
             {/* Header section matching style of home pages */}
-            <div className="text-center mb-16 pt-10">
+            <div className="text-center mb-16">
                 <span className="text-[#c4a661] uppercase tracking-[0.3em] text-sm font-semibold mb-3 block">
                     Discover Valencia
                 </span>
@@ -245,7 +245,7 @@ const Activities = () => {
                     Activities
                 </h2>
                 <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed mt-4 font-light">
-                    Explore the best attractions Valencia has to offer. Hover over any box to preview descriptions and photo galleries, or click to lock your selection.
+                    Explore the best attractions Valencia has to offer. Simply click on any activity card to view details, descriptions, and a photo gallery.
                 </p>
             </div>
 
@@ -266,7 +266,7 @@ const Activities = () => {
                         return (
                             <div
                                 key={activity.id}
-                                onMouseEnter={() => setHoveredActivityId(activity.id)}
+                                // onMouseEnter={() => setHoveredActivityId(activity.id)}
                                 onClick={() => {
                                     setSelectedActivityId(activity.id);
                                     setIsMobileModalOpen(true);
@@ -284,7 +284,7 @@ const Activities = () => {
                                 />
 
                                 {/* Dark Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10 pointer-events-none"></div>
+                                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10 pointer-events-none"></div> */}
 
                                 {/* Floating Card Content */}
                                 <div className="absolute inset-0 p-5 flex flex-col justify-between z-10">
@@ -301,7 +301,7 @@ const Activities = () => {
 
                                     {/* Title & Underline */}
                                     <div>
-                                        <h3 className="text-white text-xl font-serif tracking-wide [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
+                                        <h3 className="text-white text-xl md:text-2xl text-center font-semibold tracking-wide [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]">
                                             {activity.title}
                                         </h3>
                                         <div className={`h-[2px] bg-[#c4a661] transition-all duration-500 mt-2 ${isActive ? 'w-12' : 'w-0 group-hover:w-12'

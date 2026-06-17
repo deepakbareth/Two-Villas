@@ -151,7 +151,7 @@ const ServicesGrid = () => {
                     Services We Provide
                 </h1>
                 <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed mt-4 font-light">
-                    Elevate your stay at the villas. Simply click or place your cursor on any service card to view details, descriptions, and a photo gallery.
+                    Elevate your stay at the villas. Simply click on any service card to view details, descriptions, and a photo gallery.
                 </p>
             </div>
 
@@ -172,7 +172,7 @@ const ServicesGrid = () => {
                         return (
                             <div
                                 key={service.id}
-                                onMouseEnter={() => setHoveredServiceId(service.id)}
+                                // onMouseEnter={() => setHoveredServiceId(service.id)}
                                 onClick={() => {
                                     setSelectedServiceId(service.id);
                                     setIsMobileModalOpen(true);
@@ -190,7 +190,7 @@ const ServicesGrid = () => {
                                 />
 
                                 {/* Dark Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10 pointer-events-none"></div>
+                                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-black/10 pointer-events-none"></div> */}
 
                                 {/* Floating Card Content */}
                                 <div className="absolute inset-0 p-6 flex flex-col justify-between z-10">
@@ -207,7 +207,7 @@ const ServicesGrid = () => {
 
                                     {/* Title & Underline */}
                                     <div>
-                                        <h3 className="text-white text-2xl font-serif tracking-wide [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]">
+                                        <h3 className="text-white text-xl md:text-2xl text-center font-semibold tracking-wide [text-shadow:_0_2px_10px_rgba(0,0,0,0.9),_0_0_4px_rgba(0,0,0,1)]">
                                             {service.title}
                                         </h3>
                                         <div className={`h-[2px] bg-[#c4a661] transition-all duration-500 mt-2 ${isHovered ? 'w-16' : 'w-0 group-hover:w-16'
@@ -264,7 +264,7 @@ const ServicesGrid = () => {
                         {/* Gallery Section */}
                         <div className="mt-auto border-t border-gray-200/80 pt-6">
                             <h5 className="text-[#0a2342] font-serif text-lg mb-4 flex items-center gap-2">
-                                <Star className="w-4 h-4 text-[#c4a661] fill-[#c4a661]" /> Related Gallery
+                                <Star className="w-4 h-4 text-[#c4a661] fill-[#c4a661]" /> Related Gallery (Tap to enlarge)
                             </h5>
 
                             {/* Grid of gallery assets */}
