@@ -120,11 +120,14 @@ const BlueDiamondReviews = () => {
 
                                     {/* NEW: Liked Items */}
                                     {review.liked && (
-                                        <div className="text-xs text-gray-500 font-medium mb-5 pb-5 border-b border-gray-100">
+                                        <div className="text-xs text-gray-500 font-medium pb-5 border-b border-gray-100">
                                             <span className="font-serif font-semibold text-[#0a2342]">Liked: </span>{review.liked}
                                         </div>
                                     )}
-
+                                    <div className="flex flex-wrap items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-[15px] text-gray-800">
+                                        <span className="whitespace-nowrap">Source :</span>
+                                        <span className="font-bold break-all">Vrbo</span>
+                                    </div>
                                 </div>
                             </div>
                         );

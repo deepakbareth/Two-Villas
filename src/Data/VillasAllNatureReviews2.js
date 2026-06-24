@@ -1,0 +1,300 @@
+// we dont use this becouse this air bnb data and have have vrbo data in another compoent ok
+
+
+
+
+
+
+const allNatureAirbnbReviewsData = [
+    {
+        id: 1,
+        reviewerName: "Quinten",
+        platformTenureYears: 9,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "May",
+        reviewYear: 2026,
+        fullDateString: "May 2026",
+        text: "It was difficult to find accommodation for a group of 20 people in Valencia itself. Alberto was very helpful and assisted us with arranging taxis, and he also gave us other useful tips such as a grocery delivery service.\nA great place for a large group (BBQ, jacuzzi, swimming pool, large garden)."
+    },
+    {
+        id: 2,
+        reviewerName: "Melissa",
+        platformTenureYears: 10,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "July",
+        reviewYear: 2025,
+        fullDateString: "July 2025",
+        text: "We spent two weeks at Alberto’s Villa. We had 3 children with us. While the property is private and remote a car is needed. It’s 25 min from Valencia and city centre . We did not mind the drive.\nWe are a very busy family with lots of travel for work, our two weeks in the villa was just magical filled with nature . We had two beautiful red squirrels in the garden which the kids loved to watch. The garden is like your own tropical island . You can tell Alberto has spent many years creating such a majestic place and a lot of love and labour goes into maintaining the villa .\nAlberto could not do enough for us and was always extremely responsive especially if there was any problems .\nAlberto was the perfect host and went above and beyond for us. He is just a gentleman and we enjoyed our chats with him .\nWe cannot recommend Alberto and the villa enough . We are so sad to be home. This was the perfect holiday for us.\nThank you so much again Alberto for having us.\nMelissa & family ."
+    },
+    {
+        id: 3,
+        reviewerName: "TC Mikâïl",
+        platformTenureYears: 11,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "August",
+        reviewYear: 2025,
+        fullDateString: "August 2025",
+        isTranslated: true,
+        text: "We had a pleasant time with the family. We needed a quiet place to stay to recharge. The place is very peaceful and relaxing in the middle of the olive and fruit trees. Accessible 20-25 minutes from Valencia. The host is very responsive to our requests. The accommodation is perfectly equipped. We recommend this place and the host"
+    },
+    {
+        id: 4,
+        reviewerName: "Lauren",
+        platformTenureYears: 11,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "June",
+        reviewYear: 2025,
+        fullDateString: "June 2025",
+        isTranslated: false,
+        text: "I 100% recommend staying here. Alberto is an outstanding host - he was so responsive, proactively provided a lot of useful information and also flexible on check-in time. The villa itself is beautiful and a perfect place for groups. Alberto has thought of absolutely everything, there is plenty of seating and amenities. Each bedroom has air conditioning. The pool is lovely and the whole place was very clean and nicely decorated. The location is a little way from Valencia but Alberto even provided local taxi recommendations.\nWe had a lovely stay and would like to return!"
+    },
+    {
+        id: 5,
+        reviewerName: "Freddie",
+        platformTenureYears: 2,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "May",
+        reviewYear: 2025,
+        fullDateString: "May 2025",
+        isTranslated: false,
+        text: "The house was great for a big group. The garden was lovely with nice shady areas. The bedrooms were all comfortable. In fact the photos don't do the villa justice - it was even nicer than we were expecting.\nAlberto was super helpful, going above and beyond to make our stay easy. It is quite a way outside of Valencia but Alberto was always on hand to help us arrange taxis.\nWould definitely stay again and recommend to anyone looking for large group accommodation outside of Valencia."
+    },
+    {
+        id: 6,
+        reviewerName: "Mik",
+        platformTenureYears: 3,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "August",
+        reviewYear: 2024,
+        fullDateString: "August 2024",
+        isTranslated: false,
+        text: "Alberto was a great host! I went to Valencia with a friend group of 17 boys And we had an amazing time! The house was better than we could imagine and Alberto was always ready for us to arrange taxi’s or help with other problems! So this stay is a big recommedation!"
+    },
+    {
+        id: 7,
+        reviewerName: "Simon",
+        platformTenureYears: 13,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "June",
+        reviewYear: 2024,
+        fullDateString: "June 2024",
+        isTranslated: false,
+        text: "Alberto’s house was just perfect (beautiful garden and pool, well equipped and very clean house, calm location)! I really recommend! And Alberto has been very helpful to prepare and enjoy our trip in Valencia! Thanks a lot!"
+    },
+    {
+        id: 8,
+        reviewerName: "Santiago",
+        platformTenureYears: 0,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "June",
+        reviewYear: 2026,
+        fullDateString: "2 weeks ago",
+        isTranslated: true,
+        text: "We were with the family celebrating an 80th birthday and it couldn't have been better. Congratulations 👏👏"
+    },
+    {
+        id: 9,
+        reviewerName: "Sam",
+        platformTenureYears: 9,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "June",
+        reviewYear: 2025,
+        fullDateString: "June 2025",
+        isTranslated: false,
+        text: "We had an incredible time staying at this villa. The property is beautiful, even better than pictured, and the host Alberto did everything possible to ensure we had a wonderful stay.\nAll 17 of us were kept entertained with pool activities such as pool volleyball, a fantastic bbq, and a peaceful environment to relax and enjoy the sun.\nAlberto also helped arrange taxis for us to get into Valencia, and airport transfer so our trip was as smooth as possible. Ubers can be ordered back to the villa from Valencia if needed.\nI’d highly recommend ordering the paella offered to the villa, it is delicious!\nOverall we loved our stay and I couldn’t have asked for anything better."
+    },
+    {
+        id: 10,
+        reviewerName: "Laura",
+        platformTenureYears: 8,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "February",
+        reviewYear: 2025,
+        fullDateString: "February 2025",
+        isTranslated: false,
+        text: "We had the most AMAZING weekend at this villa for a hen do with 19 of us, and I genuinely can’t recommend it enough!\nThe villa itself is gorgeous - the garden is stunning, the pool and hot tub were super clean and got plenty of use, and the outdoor bar and BBQ were perfect for our group. The beds were super comfy, and everything was spotless.\nFrom the moment we booked, Alberto was an absolute star. He made everything so easy and went above and beyond to help.\nBefore we arrived, he helped me arrange a huge food and drink delivery, and it arrived literally as we walked through the door from the airport. He also recommended a private chef who i then booked, and the food was unbelievable.\nIt’s only 25-30 minutes from the city, and Alberto was amazing at booking taxis whenever we needed them, so getting around was super easy.\nThank you Alberto for making this a weekend none of us will ever forget! And for making me look good as maid of honour lol!"
+    },
+    {
+        id: 11,
+        reviewerName: "Alejandro",
+        platformTenureYears: 9,
+        platform: "Airbnb",
+        rating: 4,
+        reviewMonth: "June",
+        reviewYear: 2026,
+        fullDateString: "3 days ago",
+        isTranslated: false,
+        text: "A good weekend with friends thanks to a nice house"
+    },
+    {
+        id: 12,
+        reviewerName: "Teun",
+        platformTenureYears: 0,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "May",
+        reviewYear: 2026,
+        fullDateString: "May 2026",
+        isTranslated: true,
+        text: "Incredibly great location and top house!"
+    },
+    {
+        id: 13,
+        reviewerName: "Tristan",
+        platformTenureYears: 10,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "May",
+        reviewYear: 2024,
+        fullDateString: "May 2024",
+        isTranslated: false,
+        text: "We had an amazing stay for 4 days at Alberto’s villa!\nHe was super friendly and helpful with organizing taxis to Valencia and organizing a full paella night for us. Amazing backyard, super green and luscious! Palm trees and pool bring a tropical paradise vibe when you lay at the pool. Would go there anytime again."
+    },
+    {
+        id: 14,
+        reviewerName: "Christine",
+        platformTenureYears: 8,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "August",
+        reviewYear: 2023,
+        fullDateString: "August 2023",
+        isTranslated: false,
+        text: "We had a great stay here, beautiful villa and Alberto was very thorough when showing us around. We had a problem with the hot tub one evening, Alberto had it fixed the next morning for us. Valencia is beautiful, architecture, beaches and restaurants are fantastic. Thank you Alberto, we would definitely stay again"
+    },
+    {
+        id: 15,
+        reviewerName: "Neerali",
+        platformTenureYears: 9,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "May",
+        reviewYear: 2024,
+        fullDateString: "May 2024",
+        isTranslated: false,
+        text: "We had a lovely week here, the place was exactly as described! The kitchen is fully equipped and the gardens and pool were stunning. The beds are all very comfortable and each bedroom has its own bathroom. We had a lovely relaxing break and can’t wait to go back!"
+    },
+    {
+        id: 16,
+        reviewerName: "Brittany",
+        platformTenureYears: null,
+        reviewerLocation: "Cairo, Egypt",
+        travelInfo: "Stayed with kids",
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "March",
+        reviewYear: 2024,
+        fullDateString: "March 2024",
+        isTranslated: false,
+        text: "Alberto was a great host and made us feel right at home. His place was the perfect oasis outside the city to recharge in the sunshine with family. I highly recommend ordering paella and tapas from Alberto's contact... best paella we've ever had!"
+    },
+    {
+        id: 17,
+        reviewerName: "Jorrit",
+        platformTenureYears: 6,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "September",
+        reviewYear: 2023,
+        fullDateString: "September 2023",
+        isTranslated: false,
+        text: "Alberto helped us fantastic!\nCollecting the groceries and putting them in the refrigerator, arranging taxis and he gave us tips for nice restaurants!\nHe responded to messages super quickly! 5 stars!\nThe house was beautiful! Our favorite place was the bar.\nWe spent a lot of time here with some nice music playing through the speakers!"
+    },
+    {
+        id: 18,
+        reviewerName: "Yousif",
+        platformTenureYears: null,
+        reviewerLocation: "Bodegraven, Netherlands",
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "August",
+        reviewYear: 2025,
+        fullDateString: "August 2025",
+        isTranslated: true,
+        text: "It was a great week thanks to Alberto"
+    },
+    {
+        id: 19,
+        reviewerName: "Bronia",
+        platformTenureYears: 3,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "June",
+        reviewYear: 2024,
+        fullDateString: "June 2024",
+        isTranslated: false,
+        text: "After organising 15 people to celebrate my daughters Hen weekend with friends and family finding a villa for up to 16 people was always going to be difficult. We were not disappointed at all by our choice in Valencia of Godelleta Villa. Alberto is an amazing host who responds every time you message him with an answer to a query or question you have. He provided transport to and from the airport for us, along with transport to our venue at the Beach. Delivered our Paella for the evening, arranged the flamenco dances and singers to come to the villa. Alberto  put our shopping away before we arrived at the vill. Honesty and truly we could not fault the villa. It is spacious everything is there what you need. From glasses to cutlery to pots and pans. It is spacious clean and such a private location perfect for a family or friends get together. There truly is nothing negative to say about this villa We would all recommend to our friends and family to stay here. Alberto your the best"
+    },
+    {
+        id: 20,
+        reviewerName: "Taylea",
+        platformTenureYears: 6,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "September",
+        reviewYear: 2023,
+        fullDateString: "September 2023",
+        isTranslated: false,
+        text: "Where to start with Alberto and his beautiful villa!!!\nFrom the very start, communication with Alberto was amazing. He was so helpful with organising such a large group of us ! From all of our airport transfers, daily taxis, our very very very large food shopping order that we had delivered before we arrived! He even put our shopping away so we arrived to full fridges and cold drinks !\nContinuously helping us through our stunning 4 day stay.\nEach and every member of our 20 group hen party couldn’t believe how stunning the villa was, how incredibly helpful Alberto was and also the amenities the villa offered!\nFrom the beautiful pool! Hot tub, cabana bed, outside bar are, even a BBQ ! Alberto you made my sisters Hen party and we have all said we can’t wait to come back!!\nFrom the bottom of my heart, thank you again for helping me organise such a special weekend for such a special group of ladies and my sister!\nMemories forever and you and the villa are a part of that\nThank you"
+    },
+    {
+        id: 21,
+        reviewerName: "Maximilian",
+        platformTenureYears: 8,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "October",
+        reviewYear: 2024,
+        fullDateString: "October 2024",
+        isTranslated: false,
+        text: "Our vacation at Alberto's place was a dream. Alberto took great care of us and we were completely satisfied."
+    },
+    {
+        id: 22,
+        reviewerName: "Claire",
+        platformTenureYears: 12,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "May",
+        reviewYear: 2023,
+        fullDateString: "May 2023",
+        isTranslated: false,
+        text: "We had a great stay at All Nature - the villa was amazing, well equipped & perfect for a large group.\nCommunication was also great. Alberto provided a handbook upon booking with lots of info, promptly answered questions before & during our stay and booked taxis for us to help us get around as we didn’t have a car.\nI would highly recommend visiting & hope to visit again in future."
+    },
+    {
+        id: 23,
+        reviewerName: "Anna",
+        platformTenureYears: 11,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "October",
+        reviewYear: 2022,
+        fullDateString: "October 2022",
+        isTranslated: false,
+        text: "This property is absolutely stunning! The pool is beautiful with lots of areas to relax and big table to eat with a larger group. The jacuzzi is really an extra bonus! The beds are very comfortable and great showers. Also lots of seating indoors and a extra large tv!\nAlberto was a wonderful host, highly responsive. Don’t hesitate to book this property!"
+    },
+    {
+        id: 24,
+        reviewerName: "Eelko",
+        platformTenureYears: 12,
+        platform: "Airbnb",
+        rating: 5,
+        reviewMonth: "November",
+        reviewYear: 2021,
+        fullDateString: "November 2021",
+        isTranslated: false,
+        text: "Perfect luxury accommodation for groups! We visited with 13 employees from the Dutch travel organization weflycheap, and we where amazed. Very clean, very big and very luxury. A home away from home. And within 30 minutes: Valencia Airport and Valencia City.\nAlberto is the BEST host! Always very fast with answers, arranged us some taxi's, provided us with info. I wish every host was like him!"
+    },
+];
+
+export default allNatureAirbnbReviewsData;

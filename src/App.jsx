@@ -7,6 +7,7 @@ import Navbar from "./Components/Layout/Navbar";
 import Footer from "./Components/Layout/Footer";
 import ScrollHandler from "./Components/Layout/ScrollHandler";
 import PageSkeleton from "./Components/Layout/PageSkeleton"; // Import the new skeleton
+import WhatsAppButton from "./Components/Layout/WhatsAppButton";
 // import BlueDiamondReviewsPage from "./Pages/BlueDiamondReviewsPage";
 
 // Lazy loaded pages
@@ -39,6 +40,7 @@ function App() {
       </main>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }

@@ -125,7 +125,10 @@ const VillasAllNatureReviews = () => {
                                         </div>
                                     )}
 
-                                </div>
+                                    <div className="flex flex-wrap items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-[15px] text-gray-800">
+                                        <span className="whitespace-nowrap">Source :</span>
+                                        <span className="font-bold break-all">Vrbo</span>
+                                    </div>    </div>
                             </div>
                         );
                     })}
